@@ -1,0 +1,13 @@
+# Secrets
+.env
+*.env
+!.env.example
+
+# Donnees (regenerees par les scripts)
+data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/

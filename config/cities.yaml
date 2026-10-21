@@ -1,0 +1,7 @@
+# Villes communes aux 3 flux (batch, streaming, iot)
+cities:
+  - {name: Paris,     lat: 48.8566, lon: 2.3522}
+  - {name: Lyon,      lat: 45.7640, lon: 4.8357}
+  - {name: Marseille, lat: 43.2965, lon: 5.3698}
+  - {name: Toulouse,  lat: 43.6047, lon: 1.4442}
+  - {name: Bordeaux,  lat: 44.8378, lon: -0.5792}
