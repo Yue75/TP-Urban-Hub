@@ -1,12 +1,11 @@
-"""Analyses de la Partie 3 (flux IoT) : 4 questions metier + table curated.
+"""Analyses de la Partie 3 (flux IoT) : 4 questions metier + table gold.
 
-Usage (depuis la racine) :
-    python -m src.iot.analysis
+Usage : python -m src.iot.analysis   (Docker : python -m iot.analysis)
 
-Produit :
-  - curated/iot (Data Lake) : pollution horaire par ville  [city, pollutant, timestamp, value, n_sensors]
-  - reports/iot/tables/*.csv
-  - reports/iot/figures/*.png
+Lit   : silver/pollution            (mesures nettoyees en ug/m3)
+Ecrit : gold/pollution_horaire_ville  [city, pollutant, timestamp (UTC), value, value_median,
+                                       n_sensors, date_local, hour_local]  <- pour la Partie 4
+        outputs/partie3/{tables,figures} + copie dans reports/partie3 (MinIO)
 """
 import logging
 
@@ -45,11 +44,17 @@ def hourly_by_sensor(clean: pd.DataFrame) -> pd.DataFrame:
 
 
 def hourly_by_city(hs: pd.DataFrame) -> pd.DataFrame:
-    """Table 'curated' : une ligne par (ville, polluant, heure UTC)."""
+    """Table gold : une ligne par (ville, polluant, heure UTC)."""
     g = hs.groupby(["city", "pollutant", "hour"], observed=True)
     out = g.agg(value=("value", "mean"), value_median=("value", "median"),
                 n_sensors=("sensor_id", "nunique")).reset_index()
-    return out.rename(columns={"hour": "timestamp"})
+    out = out.rename(columns={"hour": "timestamp"})
+    # colonnes en heure de Paris, pour les jointures avec la meteo et les velos
+    local = out["timestamp"].dt.tz_convert(config.TIMEZONE)
+    out["date_local"] = local.dt.date
+    out["hour_local"] = local.dt.hour
+    return out
+
 
 # ------------------------------------------------------------------ Q1 : zones les plus polluees
 def q1_ranking(hs: pd.DataFrame) -> pd.DataFrame:
@@ -240,7 +245,7 @@ def fig_episodes(series: pd.DataFrame, eps: pd.DataFrame, path) -> None:
 # ------------------------------------------------------------------ orchestration
 def run() -> None:
     store = Store()
-    clean = store.read("clean")
+    clean = store.read_parquet(config.SILVER_PREFIX)
     if clean.empty:
         raise SystemExit("Aucune donnee 'clean' : lance d'abord le backfill.")
     log.info("%d mesures nettoyees, du %s au %s", len(clean), clean["timestamp"].min(), clean["timestamp"].max())
@@ -248,11 +253,10 @@ def run() -> None:
     hs = hourly_by_sensor(clean)
     ch = hourly_by_city(hs)
 
-    # table curated pour l'integration (Partie 4) : on repart d'une couche vide
-    if store.fs.exists(f"{store.root}/curated/iot"):
-        store.fs.rm(f"{store.root}/curated/iot", recursive=True)
-    store.write(ch, "curated")
-    log.info("curated/iot : %d lignes (ville x polluant x heure)", len(ch))
+    # table gold pour l'integration (Partie 4) : on repart d'une couche vide
+    store.delete_prefix(config.GOLD_PREFIX)
+    store.write_parquet(ch, config.GOLD_PREFIX)
+    log.info("%s : %d lignes (ville x polluant x heure)", config.GOLD_PREFIX, len(ch))
 
     tables = config.REPORTS_DIR / "tables"
     figs = config.REPORTS_DIR / "figures"
@@ -288,6 +292,12 @@ def run() -> None:
     print("\n=== Q4 : episodes anormaux ===")
     print(f"{len(eps)} episodes" + (f", les 10 plus intenses :\n{eps.head(10).to_string(index=False)}" if len(eps) else ""))
     print(f"\nTableaux : {tables}\nFigures  : {figs}")
+
+    # copie des rapports dans le Data Lake (comme reports/partie2)
+    for folder, sub in ((tables, "tables"), (figs, "figures")):
+        for f in folder.iterdir():
+            store.put_file(f"{config.REPORTS_PREFIX}/{sub}/{f.name}", f)
+    log.info("Rapports copies dans %s", config.REPORTS_PREFIX)
 
 
 if __name__ == "__main__":

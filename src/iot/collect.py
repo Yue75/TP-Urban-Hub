@@ -1,10 +1,10 @@
 """Collecte des mesures OpenAQ : backfill historique et ingestion reguliere (flux IoT).
 
 Usage (depuis la racine) :
-    python -m src.iot.collect backfill --days 14 --workers 4
+    python -m src.iot.collect backfill --days 30 --workers 4
     python -m src.iot.collect live --interval 15
     python -m src.iot.collect live --once
-Prerequis : python -m src.iot.discover
+Dans Docker : python -m iot.collect ...   |   Prerequis : discover
 """
 import argparse
 import logging
@@ -33,10 +33,16 @@ def _period_end(r: dict) -> str | None:
     return dt.get("utc")
 
 
-def load_sensors() -> pd.DataFrame:
-    if not config.SENSORS_FILE.exists():
-        raise SystemExit("Table des capteurs absente : lance d'abord `python -m src.iot.discover`.")
-    return pd.read_parquet(config.SENSORS_FILE)
+def load_sensors(store: Store) -> pd.DataFrame:
+    if not store.exists(config.SENSORS_KEY):
+        raise SystemExit("Table des capteurs absente : lance d'abord discover.")
+    return store.read_table(config.SENSORS_KEY)
+
+
+def _keys(df: pd.DataFrame) -> pd.MultiIndex:
+    """Cles (capteur, instant) comparables meme si les unites de temps different."""
+    ts = pd.to_datetime(df["timestamp"], utc=True).dt.as_unit("ns")
+    return pd.MultiIndex.from_arrays([df["sensor_id"].astype("int64"), ts])
 
 
 # --------------------------------------------------------------------------- backfill
@@ -52,11 +58,15 @@ def backfill(days: int, workers: int = 4, chunk: int = 40, client=None, store=No
     config.check_api_key()
     client = client or OpenAQClient()
     store = store or Store()
-    sensors = load_sensors()
+    sensors = load_sensors(store)
     ids = sensors["sensor_id"].tolist()
     dt_to = datetime.now(timezone.utc)
     dt_from = dt_to - timedelta(days=days)
     log.info("Backfill de %d capteurs sur %d jours", len(ids), days)
+
+    # Idempotence : on ne reecrit pas les mesures deja presentes (relance apres interruption)
+    existing = store.read_parquet(config.SILVER_PREFIX)
+    existing_idx = _keys(existing) if not existing.empty else None
 
     for i in range(0, len(ids), chunk):
         batch_ids = ids[i:i + chunk]
@@ -65,16 +75,19 @@ def backfill(days: int, workers: int = 4, chunk: int = 40, client=None, store=No
             rows = [r for res in results for r in res]
         raw = pd.DataFrame(rows, columns=["sensor_id", "timestamp", "value"])
         raw["timestamp"] = pd.to_datetime(raw["timestamp"], utc=True, errors="coerce")
+        raw = raw.dropna(subset=["timestamp"]).drop_duplicates(["sensor_id", "timestamp"])
+        if existing_idx is not None and not raw.empty:
+            raw = raw[~_keys(raw).isin(existing_idx)]
         raw["ingested_at"] = pd.Timestamp.now(tz="UTC")
-        store.write(raw.dropna(subset=["timestamp"]), "raw")
-        n_clean = store.write(clean(raw, sensors), "clean")
-        log.info("Capteurs %d-%d / %d : %d mesures brutes, %d propres",
+        store.write_parquet(raw, config.BRONZE_PREFIX)
+        n_clean = store.write_parquet(clean(raw, sensors), config.SILVER_PREFIX)
+        log.info("Capteurs %d-%d / %d : %d nouvelles mesures brutes, %d propres",
                  i + 1, i + len(batch_ids), len(ids), len(raw), n_clean)
 
 
 # --------------------------------------------------------------------------- live
 def init_last_seen(store: Store) -> dict[int, pd.Timestamp]:
-    df = store.read("clean")
+    df = store.read_parquet(config.SILVER_PREFIX)
     if df.empty:
         return {}
     return df.groupby("sensor_id")["timestamp"].max().to_dict()
@@ -103,7 +116,7 @@ def live(interval_min: int, once: bool = False, client=None, store=None) -> None
     config.check_api_key()
     client = client or OpenAQClient()
     store = store or Store()
-    sensors = load_sensors()
+    sensors = load_sensors(store)
     last_seen = init_last_seen(store)
     log.info("Ingestion IoT : %d capteurs, toutes les %d min", len(sensors), interval_min)
 
@@ -111,8 +124,8 @@ def live(interval_min: int, once: bool = False, client=None, store=None) -> None
         started = time.time()
         try:
             raw = poll_once(client, sensors, last_seen)
-            store.write(raw, "raw")
-            n = store.write(clean(raw, sensors), "clean")
+            store.write_parquet(raw, config.BRONZE_PREFIX)
+            n = store.write_parquet(clean(raw, sensors), config.SILVER_PREFIX)
             log.info("Cycle : %d nouvelles mesures brutes, %d propres", len(raw), n)
         except Exception:
             log.exception("Cycle en echec, on reessaie au prochain passage")

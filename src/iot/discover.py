@@ -1,8 +1,8 @@
 """Decouverte des capteurs OpenAQ autour des villes cibles.
 
 Usage (depuis la racine du repo) :
-    python -m src.iot.discover
-    python -m src.iot.discover --active-days 7
+    python -m src.iot.discover --active-days 7        (local : IOT_STORE=local)
+Dans Docker : python -m iot.discover
 """
 import argparse
 import logging
@@ -13,6 +13,7 @@ import pandas as pd
 
 from . import config
 from .openaq_client import OpenAQClient
+from .storage import Store
 
 log = logging.getLogger("iot.discover")
 
@@ -38,7 +39,7 @@ def discover(active_days: int | None = None) -> pd.DataFrame:
     client = OpenAQClient()
     rows = []
 
-    for city in config.load_cities():
+    for city in config.CITIES:
         coords = f"{city['lat']},{city['lon']}"
         n_loc = 0
         for loc in client.paginate(
@@ -101,9 +102,8 @@ def main() -> None:
     if df.empty:
         return
 
-    config.SENSORS_FILE.parent.mkdir(parents=True, exist_ok=True)
-    df.to_parquet(config.SENSORS_FILE, index=False)
-    log.info("%d capteurs ecrits dans %s", len(df), config.SENSORS_FILE)
+    Store().write_table(df, config.SENSORS_KEY)
+    log.info("%d capteurs ecrits dans %s", len(df), config.SENSORS_KEY)
 
     print("\nCapteurs par ville et polluant :")
     print(df.pivot_table(index="city", columns="pollutant",

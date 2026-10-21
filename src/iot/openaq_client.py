@@ -64,3 +64,4 @@ class OpenAQClient:
             if len(results) < limit:
                 break
             page += 1
+
