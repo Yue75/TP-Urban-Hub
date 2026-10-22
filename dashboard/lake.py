@@ -36,11 +36,10 @@ class Table:
 # Tables attendues par partie (noms des tables gold/silver de chaque pipeline)
 TABLES: dict[str, list[Table]] = {
     "Partie 1 – Météo": [
-        Table("journalier", "Météo journalière par station"),
-        Table("temperature_mensuelle", "Température moyenne mensuelle (5 villes + France)"),
-        Table("anomalies_france", "Écart quotidien à la normale du mois"),
-        Table("jours_extremes_villes", "Jours de chaleur, froid, vent ou pluie extrêmes"),
-        Table("silver/meteo", "Mesures horaires nettoyées (corrélation visibilité)", optional=True),
+        Table("meteo_journalier", "NOAA : météo journalière par station"),
+        Table("meteo_temperature_mensuelle", "NOAA : température moyenne mensuelle (5 villes + France)"),
+        Table("meteo_anomalies_france", "NOAA : écart quotidien à la normale du mois"),
+        Table("meteo_jours_extremes_villes", "NOAA : jours de chaleur, froid, vent ou pluie extrêmes"),
     ],
     "Partie 2 – Vélos": [
         Table("station_usage", "Indicateurs par station"),
