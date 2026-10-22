@@ -1,0 +1,588 @@
+﻿network_id,city,station_id,station_name,latitude,longitude,capacity,bikes_now,free_slots_now,pct_time_empty,pct_time_full,usage_rate,status,alert_now,rebalance_bikes,priority_score,last_seen
+velo,Toulouse,9bd2a0d6710c8a0a84518537aecd29c2,LOIS - CAPITOLE,43.605161,1.442323,18,17,0,0.0,1.0,6.3999999999999995,Pleine chronique : délester,pleine,-8,200.0,2026-10-21 12:35:16
+v3-bordeaux,Bordeaux,e844b1371c280d8ffe76421ec75c5578,Allees de Chartres,44.84718,-0.57131,9,9,0,0.0,1.0,12.799999999999999,Pleine chronique : délester,pleine,-5,200.0,2026-10-21 12:35:16
+v3-bordeaux,Bordeaux,5eead6a391c459e93a4796a3eaf3c937,Begles Poste,44.807735,-0.560024,10,10,0,0.0,1.0,11.52,Pleine chronique : délester,pleine,-5,200.0,2026-10-21 12:35:16
+velov,Lyon,dc4d2341dfb4a7cfc29996cfa7c7bb8e,VIENNE / MONTAGNY,45.732483,4.853406,20,1,19,0.8333333333333334,0.0,5.76,Vide chronique : réapprovisionner,,9,166.7,2026-10-21 12:35:16
+vlille,Lille,0be87fc4af3afa8db7d6079dd38ebc47,Jardin Vauban,50.63609300000001,3.050447,18,0,18,0.8333333333333334,0.0,12.799999999999999,Vide chronique : réapprovisionner,vide,9,166.7,2026-10-21 12:35:16
+le-velo-star,Rennes,622cce2b20d2909ed337f31f503335f1,Bonnets Rouges,48.106846,-1.665814,23,0,23,0.8333333333333334,0.0,5.0086956521739125,Vide chronique : réapprovisionner,vide,12,166.7,2026-10-21 12:35:16
+velov,Lyon,2b084456d7c77678a029686f77df1bbb,SAINT-JUST,45.75597,4.818904,18,0,18,0.8333333333333334,0.0,6.3999999999999995,Vide chronique : réapprovisionner,vide,9,166.7,2026-10-21 12:35:16
+velov,Lyon,998577a6bfd1d3e36608da6671e5abc0,UNIVERSITÉS LYON III / LYON II,45.7511023770123,4.83615396294288,39,38,0,0.0,0.8333333333333334,8.86153846153846,Pleine chronique : délester,pleine,-19,166.7,2026-10-21 12:35:16
+velov,Lyon,bf4b29148b7f8a6e715c2ae480ab03f2,SAINTE-BLANDINE,45.744438,4.822152,16,16,0,0.0,0.8333333333333334,7.199999999999999,Pleine chronique : délester,pleine,-8,166.7,2026-10-21 12:35:16
+velov,Lyon,bfb444d0d44ff6e92514b45ee1b2b989,PLACE GERSON,45.767057,4.827013999999999,20,0,19,0.8333333333333334,0.0,5.76,Vide chronique : réapprovisionner,vide,10,166.7,2026-10-21 12:35:16
+velo,Toulouse,4d84321008affe6644291b3db560c45d,RAYNAL - LOUIN,43.62814500000001,1.4514130000000003,15,0,14,0.8333333333333334,0.0,15.359999999999998,Vide chronique : réapprovisionner,vide,8,166.7,2026-10-21 12:35:16
+velov,Lyon,662da9cbb2f9417b75ced455c35dec80,PART-DIEU / GARIBALDI,45.762768,4.852563,20,20,0,0.0,0.8333333333333334,11.52,Pleine chronique : délester,pleine,-10,166.7,2026-10-21 12:35:16
+velov,Lyon,ace7a6e8628209af276e85e0bc5fb19a,PLACE LEBRET,45.735653000000006,4.853042000000001,14,1,13,0.8333333333333334,0.0,8.228571428571428,Vide chronique : réapprovisionner,,6,166.7,2026-10-21 12:35:16
+vlille,Lille,0c04b7b66195ffd6eb890b0598c630ad,Cimetiere du Sud,50.612950000000005,3.0472679999999994,20,0,20,0.8333333333333334,0.0,5.76,Vide chronique : réapprovisionner,vide,10,166.7,2026-10-21 12:35:16
+velo,Toulouse,0be30d8039afe82df6015e7d2159e45b,ALSACE-LORRAINE - POMME,43.60330199999999,1.445454,18,16,0,0.0,0.8333333333333334,12.799999999999999,Pleine chronique : délester,pleine,-7,166.7,2026-10-21 12:35:16
+bicloo,Nantes,5b1a0d38dbc1fca453559d88ebad89a4,MILLERAND,47.2082,-1.5301799999999999,14,0,14,0.8333333333333334,0.0,8.228571428571428,Vide chronique : réapprovisionner,vide,7,166.7,2026-10-21 12:35:16
+velov,Lyon,b2be485d4d77b4a38008e2c4abc7d1a5,BOIRON GRANGER,45.763139,4.900492,16,1,15,0.8333333333333334,0.0,7.199999999999999,Vide chronique : réapprovisionner,,7,166.7,2026-10-21 12:35:16
+velov,Lyon,ceae309f9b1c56a6c230dbf16aae1375,PLACE BIR-HAKEIM,45.752553,4.855756,19,1,18,0.8333333333333334,0.0,6.063157894736841,Vide chronique : réapprovisionner,,9,166.7,2026-10-21 12:35:16
+vlille,Lille,13ad5cce0406da24b8cf2301aea27e64,Place Tacq,50.621128,3.0354829999999997,18,1,17,0.8333333333333334,0.0,6.3999999999999995,Vide chronique : réapprovisionner,,8,166.7,2026-10-21 12:35:16
+velov,Lyon,18eaad200ac9e346d8acea9cad4148db,BERTHELOT / ROUTE DE VIENNE,45.742639,4.850538,15,0,14,0.8333333333333334,0.0,7.679999999999999,Vide chronique : réapprovisionner,vide,8,166.7,2026-10-21 12:35:16
+velov,Lyon,87b30a6ef0b32a476bc9eb9fd45f76d3,PLACE FLAMMARION,45.779332000000004,4.820259,18,0,17,0.8333333333333334,0.0,6.3999999999999995,Vide chronique : réapprovisionner,vide,9,166.7,2026-10-21 12:35:16
+velov,Lyon,e3bc7fa05f775453ee0962f20179ce71,VENISSIEUX - MOULIN A VENT,45.729714,4.854337999999999,22,0,22,0.8333333333333334,0.0,15.709090909090907,Vide chronique : réapprovisionner,vide,11,166.7,2026-10-21 12:35:16
+velov,Lyon,879c2da9ba1bca7e4104b54d123bf8b7,MÉMOIRE ET SOCIÉTÉ,45.75958,4.882739,24,0,23,0.8333333333333334,0.0,4.8,Vide chronique : réapprovisionner,vide,12,163.3,2026-10-21 12:35:16
+velov,Lyon,675b9ad1b45bfd558d052f6aff1c4c9b,FAURE / MEYNIS,45.755068,4.871457,30,1,27,0.8333333333333334,0.0,3.8399999999999994,Vide chronique : réapprovisionner,,14,147.3,2026-10-21 12:35:16
+velov,Lyon,352c2692669bfced4fd168d911a17373,PLACE DE LA RECONNAISSANCE,45.754415,4.885249000000001,32,0,30,0.8333333333333334,0.0,3.5999999999999996,Vide chronique : réapprovisionner,vide,16,143.3,2026-10-21 12:35:16
+velib,Paris,c0e877315f46f40bc1ef9a82c9075771,Batignolles - Rome,48.881823370567,2.3202589899301995,15,1,13,0.6666666666666666,0.0,7.679999999999999,Vide chronique : réapprovisionner,,7,133.3,2026-10-21 12:35:16
+velov,Lyon,933e60237d9cf2a919350a02204e35e8,DELORE / AUDIBERT ET LAVIROTTE,45.73586,4.856887999999999,18,0,17,0.6666666666666666,0.0,12.799999999999999,Vide chronique : réapprovisionner,vide,9,133.3,2026-10-21 12:35:16
+velo,Toulouse,82b6bd8b0c4cd9c289edadd682297dd9,RIEUX - VAISSE,43.59625599999999,1.462071,13,1,12,0.6666666666666666,0.0,8.86153846153846,Vide chronique : réapprovisionner,,6,133.3,2026-10-21 12:35:16
+velib,Paris,a6fe29a0751fae126e59b510008b9a86,Neuilly - Petit,48.898965361341254,2.29627937078476,16,14,2,0.0,0.6666666666666666,14.399999999999999,Pleine chronique : délester,,-6,133.3,2026-10-21 12:35:16
+velib,Paris,e04daf87373d4e5ffcdbd38079a256c7,Paradis - Hauteville,48.874999954666755,2.3522757401923404,31,29,2,0.0,0.6666666666666666,7.4322580645161285,Pleine chronique : délester,,-14,133.3,2026-10-21 12:35:16
+vlille,Lille,661d1adf0d3a904949439a08163b4017,Chanzy,50.625040000000006,3.1008,12,0,12,0.6666666666666666,0.0,9.6,Vide chronique : réapprovisionner,vide,6,133.3,2026-10-21 12:35:16
+velib,Paris,ee7c21cf32d7e04fdf53a55f372b376f,Nationale - Marcel Duchamp,48.82463749337136,2.3678014799952507,23,1,21,0.6666666666666666,0.0,5.0086956521739125,Vide chronique : réapprovisionner,,11,133.3,2026-10-21 12:35:16
+velo,Toulouse,90ce74c93ae2c53a75c1142186d9f199,HERBETTES - BUTTE,43.579341,1.47313,17,1,15,0.6666666666666666,0.0,6.776470588235293,Vide chronique : réapprovisionner,,8,133.3,2026-10-21 12:35:16
+velib,Paris,5c2639c19391b5ecbc5fa57b45a699d2,Mairie du 18ème,48.892939296937605,2.3445510864257812,40,2,38,0.6666666666666666,0.0,5.76,Vide chronique : réapprovisionner,,18,133.3,2026-10-21 12:35:16
+velib,Paris,8fe272d23e3a1f83406b5c8dc8bbc87f,Général De Gaulle - Vivien,48.83607420090204,2.4189166724681854,22,2,19,0.6666666666666666,0.0,10.47272727272727,Vide chronique : réapprovisionner,,9,133.3,2026-10-21 12:35:16
+velib,Paris,a32e5be42a0b2334a48192545fa85d49,Mariotte - Batignolles,48.884571659595,2.3214695034750004,20,0,18,0.6666666666666666,0.0,5.76,Vide chronique : réapprovisionner,vide,10,133.3,2026-10-21 12:35:16
+vlille,Lille,b8993b0380ca72393e2ec2cd0dfbac2a,Rives de la Haute Deule,50.630596,3.0230010000000003,14,0,14,0.6666666666666666,0.0,8.228571428571428,Vide chronique : réapprovisionner,vide,7,133.3,2026-10-21 12:35:16
+velib,Paris,8a8c32c98e07071125d3b1ac06f43e59,Haies - Réunion,48.85386896766491,2.402426162238911,22,1,21,0.6666666666666666,0.0,5.236363636363635,Vide chronique : réapprovisionner,,10,133.3,2026-10-21 12:35:16
+velov,Lyon,3f316a493ef99b7db30a6fbf260d33c5,BOURSE DU TRAVAIL,45.759648,4.848139,27,25,1,0.0,0.6666666666666666,12.799999999999999,Pleine chronique : délester,,-12,133.3,2026-10-21 12:35:16
+velov,Lyon,d1187458ab6d6225e786df2376f1311c,PART-DIEU / DERUELLE,45.76297399999999,4.855071,30,26,1,0.0,0.6666666666666666,11.52,Pleine chronique : délester,,-11,133.3,2026-10-21 12:35:16
+v3-bordeaux,Bordeaux,7791b0eae9e58a3d04d3d1cdc8632f92,Gare Saint-Jean,44.8263,-0.55707,22,1,21,0.6666666666666666,0.0,5.236363636363635,Vide chronique : réapprovisionner,,10,133.3,2026-10-21 12:35:16
+velib,Paris,c0ff72472c8ce1be5e4ea3b474784061,Vistule - Choisy,48.82365543660611,2.3615723848342896,33,2,31,0.6666666666666666,0.0,6.9818181818181815,Vide chronique : réapprovisionner,,15,133.3,2026-10-21 12:35:16
+velib,Paris,c7a119e30d8a26d68e61152c74a87343,Ranelagh - Mozart,48.855443900000004,2.2704418,23,1,22,0.6666666666666666,0.0,5.0086956521739125,Vide chronique : réapprovisionner,,11,133.3,2026-10-21 12:35:16
+velib,Paris,817f3c10a4e1381e80037f9313a0f6e7,Ivry - Simone Weil,48.823283932030755,2.3659095168113713,18,1,17,0.6666666666666666,0.0,6.3999999999999995,Vide chronique : réapprovisionner,,8,133.3,2026-10-21 12:35:16
+velib,Paris,8450f57ac206a32b85baa5d454366148,Jean Mermoz - Champs-Elysées,48.869689856852,2.3107324540615006,49,48,0,0.0,0.6666666666666666,9.40408163265306,Pleine chronique : délester,pleine,-24,133.3,2026-10-21 12:35:16
+velo,Toulouse,6b258b4e7b10d0c7f1292fa730d2f9b9,RIEUX - LEYGUE,43.59411699999999,1.465197,18,1,15,0.6666666666666666,0.0,6.3999999999999995,Vide chronique : réapprovisionner,,8,133.3,2026-10-21 12:35:16
+velo,Toulouse,f7966640cfe098bda52559bd33364761,GLOIRE - ST-BERTRAND,43.605557,1.458483,13,1,11,0.6666666666666666,0.0,8.86153846153846,Vide chronique : réapprovisionner,,6,133.3,2026-10-21 12:35:16
+velov,Lyon,c264190bb1b6ff5b3f6712dab8b5c4b7,BROTTEAUX / VAUBAN,45.76628399999999,4.856848,15,13,1,0.0,0.6666666666666666,30.719999999999995,Pleine chronique : délester,,-6,133.3,2026-10-21 12:35:16
+velib,Paris,009ceb0db951391aa947e5c2d939518e,Pernety - Raymond Losserand,48.834254627952994,2.317609339387,32,0,32,0.6666666666666666,0.0,7.199999999999999,Vide chronique : réapprovisionner,vide,16,133.3,2026-10-21 12:35:16
+velov,Lyon,83d2bbb7015fd9f23f6f54beb40a27fc,STALINGRAD,45.77435,4.859157,21,18,2,0.0,0.6666666666666666,16.457142857142856,Pleine chronique : délester,,-8,133.3,2026-10-21 12:35:16
+velib,Paris,b36411fb0a33a59d977438de7a3dbd3e,Notre-Dame-des-Champs - Stanislas,48.84479928858769,2.329337755887181,19,18,0,0.0,0.6666666666666666,6.063157894736841,Pleine chronique : délester,pleine,-9,133.3,2026-10-21 12:35:16
+velo,Toulouse,3a413c02255426c36047ed5935dc961d,STRASBOURG - AUSTERLITZ,43.60649899999999,1.44769,23,22,1,0.0,0.6666666666666666,5.0086956521739125,Pleine chronique : délester,,-11,133.3,2026-10-21 12:35:16
+velo,Toulouse,11848110e32a0302de9f3778e8952418,LAGANNE - TEINTURIERS,43.596667,1.436229,18,1,17,0.6666666666666666,0.0,6.3999999999999995,Vide chronique : réapprovisionner,,8,133.3,2026-10-21 12:35:16
+velo,Toulouse,8799b052e74b2b3d492ef246906bb091,TOLOSANE - DE FRANCE,43.543115,1.477417,16,1,15,0.6666666666666666,0.0,7.199999999999999,Vide chronique : réapprovisionner,,7,133.3,2026-10-21 12:35:16
+velov,Lyon,9cb66670116a88fd158aa855e2c3695f,PLACE ENNEMOND FOUSSERET,45.76469500000001,4.828969,16,1,14,0.6666666666666666,0.0,14.399999999999999,Vide chronique : réapprovisionner,,7,133.3,2026-10-21 12:35:16
+velib,Paris,720b992168dfaf617e180c5ac09f6ffe,Mûriers - Père Lachaise,48.86413050966804,2.39164982067019,20,0,20,0.6666666666666666,0.0,5.76,Vide chronique : réapprovisionner,vide,10,133.3,2026-10-21 12:35:16
+velib,Paris,80d99e3a323117129b2639ce06f3fbce,Enghien - Faubourg Poissonnière,48.872420063053,2.3483952362828,33,31,0,0.0,0.6666666666666666,6.9818181818181815,Pleine chronique : délester,pleine,-15,133.3,2026-10-21 12:35:16
+vlille,Lille,2acff5f5c297457f22403fb29e25ea47,Bois Habite,50.62651,3.0792110000000004,17,0,17,0.6666666666666666,0.0,6.776470588235293,Vide chronique : réapprovisionner,vide,9,133.3,2026-10-21 12:35:16
+velib,Paris,503019ba45ddeea8f7279edc467baac4,Karl Marx,48.784527937293184,2.3646667979455587,16,1,15,0.6666666666666666,0.0,7.199999999999999,Vide chronique : réapprovisionner,,7,133.3,2026-10-21 12:35:16
+velib,Paris,5cc8f47571f1fbacc37b07b700ded02e,De Toqueville - Terrasse,48.882428,2.314002,30,0,28,0.6666666666666666,0.0,7.679999999999999,Vide chronique : réapprovisionner,vide,15,133.3,2026-10-21 12:35:16
+velib,Paris,6a51885695884a884bbc51e4ad276c63,Place des Victoires,48.866035399999994,2.3420333,24,24,0,0.0,0.6666666666666666,9.6,Pleine chronique : délester,pleine,-12,133.3,2026-10-21 12:35:16
+velib,Paris,3603e235012ae327335a8e4461486b76,Vincent Auriol - Louise Weiss,48.834001935501,2.3703888058662,22,21,1,0.0,0.6666666666666666,5.236363636363635,Pleine chronique : délester,,-10,133.3,2026-10-21 12:35:16
+velib,Paris,3e24a74dd6773969e24d741940fc1290,Guillaume Bertrand - République,48.863825174341,2.380906377155,38,2,35,0.6666666666666666,0.0,6.063157894736841,Vide chronique : réapprovisionner,,17,133.3,2026-10-21 12:35:16
+velo,Toulouse,14be4f019b601d6e5df9ba5374f8fd3b,COLONNE - REILLE,43.609218,1.459543,13,1,12,0.6666666666666666,0.0,8.86153846153846,Vide chronique : réapprovisionner,,6,133.3,2026-10-21 12:35:16
+velov,Lyon,e206d24f32b7a78acfe3450ab529513d,CLINIQUE MONPLAISIR,45.747091000000005,4.860196000000001,16,1,14,0.6666666666666666,0.0,14.399999999999999,Vide chronique : réapprovisionner,,7,133.3,2026-10-21 12:35:16
+vlille,Lille,33c121589edd8e0e40f5bbcc672e0769,Louviere,50.64569,3.0858226,20,1,19,0.6666666666666666,0.0,5.76,Vide chronique : réapprovisionner,,9,133.3,2026-10-21 12:35:16
+velib,Paris,8ceb4cb0d2e314bc05a72bb010d1aa33,Jules Guesdes - Général de Gaulle,48.81930581291959,2.278934195637703,24,1,23,0.6666666666666666,0.0,4.8,Vide chronique : réapprovisionner,,11,130.7,2026-10-21 12:35:16
+vlille,Lille,85d40acedf5a2335af2c47b100281675,Rue d'Arras,50.62224,3.0670040000000003,25,0,25,0.6666666666666666,0.0,4.608,Vide chronique : réapprovisionner,vide,13,128.1,2026-10-21 12:35:16
+velib,Paris,f011711ac6bb653a88e79befafbda642,Olivier de Serres - Leriche,48.83460221715206,2.2957482933998112,25,1,24,0.6666666666666666,0.0,4.608,Vide chronique : réapprovisionner,,12,128.1,2026-10-21 12:35:16
+velib,Paris,fe5431d0976be760a51e34e21383f0f9,Félix Ziem - Armand Gauthier,48.88949630486821,2.3333936588043964,25,0,25,0.6666666666666666,0.0,4.608,Vide chronique : réapprovisionner,vide,13,128.1,2026-10-21 12:35:16
+velib,Paris,fa2b28a7180af7d6659c5972ba573a85,Manin - Simon Bolivar,48.876499654127,2.3794073625991,26,1,25,0.6666666666666666,0.0,4.43076923076923,Vide chronique : réapprovisionner,,12,125.7,2026-10-21 12:35:16
+velib,Paris,4a9c97f9a2e344e91ff9a1006039dd6c,Abbé Groult - Convention,48.83596927866069,2.302064039509349,27,0,26,0.6666666666666666,0.0,4.266666666666667,Vide chronique : réapprovisionner,vide,14,123.6,2026-10-21 12:35:16
+velib,Paris,415e59bd5a8ba4b267518de1c81f0cd2,Granges aux Belles,48.8761373390584,2.3680844979417,27,0,25,0.6666666666666666,0.0,4.266666666666667,Vide chronique : réapprovisionner,vide,14,123.6,2026-10-21 12:35:16
+velib,Paris,35dde203e8309584f0f623491acb6c67,Pont Neuf - Rivoli,48.860089892617,2.344057559967,27,27,0,0.0,0.6666666666666666,4.266666666666667,Pleine chronique : délester,pleine,-14,123.6,2026-10-21 12:35:16
+velib,Paris,ba37a6aea713b50c7b67705f1aff3040,Mairie du 20ème,48.865302324275,2.3990669846535,27,0,26,0.6666666666666666,0.0,4.266666666666667,Vide chronique : réapprovisionner,vide,14,123.6,2026-10-21 12:35:16
+velib,Paris,00718dcc2fa34b019d9cba625c94b1e7,Mouton Duvernet - Général Leclerc,48.831632518293,2.3293121159077006,28,1,27,0.6666666666666666,0.0,4.114285714285714,Vide chronique : réapprovisionner,,13,121.5,2026-10-21 12:35:16
+velib,Paris,96b8a6032ec2f86759a21a73bc399c76,Jeanne Hornet - Girardot,48.873802681432146,2.427820265293122,29,0,29,0.6666666666666666,0.0,3.9724137931034478,Vide chronique : réapprovisionner,vide,15,119.6,2026-10-21 12:35:16
+velib,Paris,27d5bbf1a7a5546c90998877e29784d8,Henri Ravera - Gabriel Péri,48.79722273833844,2.302115857601166,30,1,29,0.6666666666666666,0.0,3.8399999999999994,Vide chronique : réapprovisionner,,14,117.9,2026-10-21 12:35:16
+velib,Paris,462a91ffcb8fccbbf61bd605e43a8af1,Chabanais - Petits Champs,48.86703740186721,2.336716018617153,30,29,1,0.0,0.6666666666666666,3.8399999999999994,Pleine chronique : délester,,-14,117.9,2026-10-21 12:35:16
+velib,Paris,e0685d46d00dd0a296655c67c1ef6b88,Legendre - Nollet,48.887742186754224,2.3202930798813743,30,1,29,0.6666666666666666,0.0,3.8399999999999994,Vide chronique : réapprovisionner,,14,117.9,2026-10-21 12:35:16
+velib,Paris,907ceab389cb2fcffe65c9df93f9fd50,Bichat - Grange aux Belles,48.87368800000001,2.365015,30,1,25,0.6666666666666666,0.0,3.8399999999999994,Vide chronique : réapprovisionner,,14,117.9,2026-10-21 12:35:16
+velib,Paris,2db96468e027a48d90959e98d750f4e3,Louis Pasteur - Albert Petit,48.79626100000001,2.317289,31,0,31,0.6666666666666666,0.0,3.7161290322580642,Vide chronique : réapprovisionner,vide,16,116.2,2026-10-21 12:35:16
+velib,Paris,76692ca3f594c2495dac1aa4f6779829,Estienne d'Orves - Henri Ginoux,48.815388220397274,2.3208867907609334,31,1,30,0.6666666666666666,0.0,3.7161290322580642,Vide chronique : réapprovisionner,,15,116.2,2026-10-21 12:35:16
+vlille,Lille,0390b2ea485d0642446d8bcb38826f43,Universite Catholique,50.63223299999999,3.046134,31,1,30,0.6666666666666666,0.0,3.7161290322580642,Vide chronique : réapprovisionner,,15,116.2,2026-10-21 12:35:16
+velib,Paris,c3250e94d8848caf3f29646b63ca09a3,Place Marcel Cachin,48.81411442356866,2.39090770483017,32,31,1,0.0,0.6666666666666666,3.5999999999999996,Pleine chronique : délester,,-15,114.7,2026-10-21 12:35:16
+velib,Paris,f7fbba029f890b7c1689129b370b9e53,Ménilmontant - Pelleport,48.870682633845,2.3989596023316007,32,0,29,0.6666666666666666,0.0,3.5999999999999996,Vide chronique : réapprovisionner,vide,16,114.7,2026-10-21 12:35:16
+velib,Paris,cfd0fbc11c919802ae91c2eb8839bc29,Sainte-Elisabeth - Turbigo,48.86610337431,2.3596492409706005,33,33,0,0.0,0.6666666666666666,3.4909090909090907,Pleine chronique : délester,pleine,-17,113.2,2026-10-21 12:35:16
+velib,Paris,09d581adc5efda8a6e0c2eff61397cc2,Romainville - Vaillant-Couturier,48.86785,2.446748,38,1,35,0.6666666666666666,0.0,3.0315789473684207,Vide chronique : réapprovisionner,,18,107.1,2026-10-21 12:35:16
+velib,Paris,1e8c85a636db368498ac6bb863c152ed,Place des Droits de l'Enfant,48.827480400000006,2.3319217,39,1,38,0.6666666666666666,0.0,2.9538461538461536,Vide chronique : réapprovisionner,,19,106.1,2026-10-21 12:35:16
+velib,Paris,f621ac13ababcd13d314e8416fa2a0f7,Square des Epinettes,48.89383909781389,2.325953990221024,40,1,38,0.6666666666666666,0.0,2.88,Vide chronique : réapprovisionner,,19,105.1,2026-10-21 12:35:16
+velib,Paris,4a279a72d89c67bdfea32567e15d81f0,Ouest - Château,48.83617286014242,2.3193921439238037,41,1,40,0.6666666666666666,0.0,2.8097560975609754,Vide chronique : réapprovisionner,,20,104.1,2026-10-21 12:35:16
+velib,Paris,036690096dedbfd7f1935ac0092059fe,Claude Decaen - Cannebière,48.83761417037952,2.3972537821957043,45,1,43,0.6666666666666666,0.0,2.5599999999999996,Vide chronique : réapprovisionner,,22,100.8,2026-10-21 12:35:16
+velib,Paris,693bb23d822ab432a22b0f2b9e4614a1,Square de la rue Pixérécourt,48.8736824,2.3960278,45,1,44,0.6666666666666666,0.0,2.5599999999999996,Vide chronique : réapprovisionner,,22,100.8,2026-10-21 12:35:16
+le-velo,Marseille,0b929e8834d4d4d5eeadca476805b0e9,Notre-Dame - Vauban,43.283998,5.375062,20,0,10,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,829007fd1e0f54aab672838f926f463c,La Barasse,43.284775,5.483871999999999,30,0,29,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+le-velo,Marseille,841c157424ebfe60badd1d545f171e42,Reboul - Argile,43.28078399999999,5.396622,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,a0514c95f0890eab60ba5a538c3c9c5b,Mazargues - Huveaune,43.265575000000005,5.3900429999999995,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,cfebb6008d61c71bfc5669e6450ffe96,Cours Julien - Frères Barthelemy,43.292639,5.384248,20,0,10,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,d74960ffcea6c80ec1ed6d681c9d259c,Escale Borély,43.254948000000006,5.376452,60,0,60,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,30,100.0,2026-10-21 12:35:16
+le-velo,Marseille,e17487e598b6f4385b60f17b0391dc33,Jean Moulin - Saint Etienne,43.286083,5.398661,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+le-velo,Marseille,f0cc3eeabf32c4afd1643998e9ac43c3,Roy d'Espagne - Floralia,43.241784,5.397272,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,f3f6136eb7ba7bfa3597be7643c1d2f5,Vallon de l’Oriol,43.276180000000004,5.36101,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,fbe9a2ca8899621bc02dc337dfbbe2ed,Duparc - Brossolette,43.306414,5.401029,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo-star,Rennes,7b9ead8f839c276e389d6151a42f67b3,République,48.110026,-1.678037,1,0,1,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,1,100.0,2026-10-21 12:35:16
+v3-bordeaux,Bordeaux,6db4a65d6de1a2cec4d3a89ef8a4ddfb,Rue St Vincent de Paul,44.82641999999999,-0.5573199999999999,44,0,44,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,22,100.0,2026-10-21 12:35:16
+velib,Paris,14aa5a19d30ce4c1724a4a427bb7c144,Abbé Carton - Plantes,48.827673823166,2.3209181427956,25,0,25,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,13,100.0,2026-10-21 12:35:16
+velib,Paris,1b2508a6873947c55306c66cbce69251,Londres - Place d'Estienne d'Orves,48.876693805756986,2.3305362090468407,25,24,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-12,100.0,2026-10-21 12:35:16
+velib,Paris,21daa81bb88f96edf3e4c9b4c1e55621,Carpeaux - Place Jacques Froment,48.8906542,2.3309427999999994,19,0,19,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+velib,Paris,2a9ebc217a345318014a16d3f70d4b22,Pelleport - Belgrand,48.865000818477,2.4039808363775,15,0,15,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+velib,Paris,4f9b51c9a7bf8e4967589f4d14055c25,Botzaris - Crimée,48.87959698690176,2.3887913337477067,21,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,11,100.0,2026-10-21 12:35:16
+velib,Paris,ad9a84361b63c948191ce2febd95b048,Square du Bataclan,48.8633762,2.3711327,20,20,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-10,100.0,2026-10-21 12:35:16
+velib,Paris,afd259141843f240d250d217854b95e7,Lucie Aubrac - Fort,48.81814483400898,2.271184623241425,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+velib,Paris,c737a1a2a4df9cd05b776763a8bfcd47,Maréchal Leclerc de Hauteclocque - Marché Buzenval,48.85844600000001,2.192077,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+velib,Paris,d98bd61b23c66085d4c05141739b43cf,Lassus - Delouvain,48.87550448460001,2.3890327325519,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+velib,Paris,f574fd726a1dbc9e4e0c7646544823b5,La Jarry - Place Diderot,48.849726940367,2.4520137906075,25,0,23,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,13,100.0,2026-10-21 12:35:16
+velo,Toulouse,07646da903a41b60c3cd7cddc7db6c71,PARGAMINIÈRES - LAKANAL,43.60459,1.4400200000000003,11,8,2,0.0,0.5,20.94545454545454,Pleine chronique : délester,,-3,100.0,2026-10-21 12:35:16
+velo,Toulouse,0a669e561c9e60b3b163f0556e23037c,AV. DE TOULOUSE  CENTRE CIAL SAINT-CAPRAIS,43.654633999999994,1.477017,16,16,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-8,100.0,2026-10-21 12:35:16
+velo,Toulouse,11c185f2936de80a53daf6d81eec48b4,ST-CYPRIEN - MÉTRO VIÉ,43.59778,1.4316189999999998,13,12,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-6,100.0,2026-10-21 12:35:16
+velo,Toulouse,319bad8da58c065958cef2638c3e1177,COLONNE - SALONIQUE,43.610556,1.4649529999999997,13,0,13,0.5,0.0,8.86153846153846,Vide chronique : réapprovisionner,vide,7,100.0,2026-10-21 12:35:16
+velo,Toulouse,f4a8d638c371cfb1b0fff85d15a22ec1,AV. DE MURET - DUBOUL,43.57981,1.4237,13,2,10,0.5,0.0,17.72307692307692,Vide chronique : réapprovisionner,,5,100.0,2026-10-21 12:35:16
+velomagg,Montpellier,c09d08978d3fbee780d89fd53b79fe1e,Plan Cabanes,43.60849100000001,3.868389,12,0,12,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,6,100.0,2026-10-21 12:35:16
+velomagg,Montpellier,c484c018d4bc1f9e37e9575afd7ac69d,Gambetta,43.607105999999995,3.8706929999999997,8,0,7,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,4,100.0,2026-10-21 12:35:16
+velov,Lyon,f27e23031b3b84f80740dce4e6a3ac50,WITKOWSKI/VALDO,45.750059,4.78539,15,0,14,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+le-velo,Marseille,0106b0ce6a93f946ee05ca37cc82ac66,Les Docks - Terrasses du Port,43.305625,5.365619,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+le-velo,Marseille,44577ff053107e8a693b092a4409090e,Boulevard urbain Sud - François Mauriac,43.27073000000001,5.422766,10,0,10,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,5,100.0,2026-10-21 12:35:16
+le-velo,Marseille,9405b6bd4418b99334fa78867c4575b9,Colbert - Sainte Barbe,43.299249,5.374809,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,f23b5fcfda5eaa499c2a6bc4f170f53b,Canebiere Reine Elisabeth,43.295748,5.37522,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+v3-bordeaux,Bordeaux,806b030d550795a47d7a18b1904b6ecd,Barriere de Toulouse,44.814476000000006,-0.570589,18,0,18,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,9,100.0,2026-10-21 12:35:16
+velib,Paris,06537561191e537f9dfa438e0e8087b9,Condorcet - Turgot,48.87985155789093,2.345232367515564,20,0,17,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+velib,Paris,07260837e303d24b51d299a8869bfd3b,Mairie du 2ème,48.8672190355135,2.3404625437747044,28,24,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-10,100.0,2026-10-21 12:35:16
+velib,Paris,149e73e4c6655dde4a60b24d8aa3b51f,Aboukir - Alexandrie,48.868683444444734,2.3502043269474897,21,20,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-10,100.0,2026-10-21 12:35:16
+velib,Paris,31443b36df8505669e80765f7b45b13a,Fontainebleau - Edmond Michelet,48.80956436844048,2.3626908659935,45,0,42,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,23,100.0,2026-10-21 12:35:16
+velib,Paris,44dca2a45e5c2cc738a308ec18fdb562,Edouard Pailleron - Simon Bolivar,48.87979886049996,2.374839261174202,24,0,21,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,12,100.0,2026-10-21 12:35:16
+velib,Paris,50db3425c20f335dfb38aaeb26bea527,Square Louise Michel,48.884687354509,2.3441386967897,36,0,35,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,18,100.0,2026-10-21 12:35:16
+velib,Paris,6ab04d33c2786fdee83912ebd000afe1,Place Balard,48.836395736424,2.2784192115068005,22,29,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-18,100.0,2026-10-21 12:35:16
+velib,Paris,ff22697fcb655df134aa23e633587ca6,Ramponeau - Belleville,48.871031137596,2.3790568521140005,44,0,42,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,22,100.0,2026-10-21 12:35:16
+velo,Toulouse,e5cd45895279a4404a7ea383a86a6879,CH. DE TOURNEFEUILLE - BOURIETTE,43.605078,1.376499,13,0,12,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,7,100.0,2026-10-21 12:35:16
+velov,Lyon,3ba39fe908b69d216d09017beae8427c,GAMBETTA / JUSSERAND,45.751123,4.855604,13,0,12,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,7,100.0,2026-10-21 12:35:16
+velov,Lyon,56cce3505af63f50a890367a5e734700,SISLEY / DAUPHINE,45.752484,4.868755,17,2,12,0.5,0.0,13.552941176470586,Vide chronique : réapprovisionner,,7,100.0,2026-10-21 12:35:16
+velov,Lyon,7509a515ab44e8cac6a01c91c1f26914,PERRACHE / DE PURY,45.739497,4.822521000000001,18,17,1,0.0,0.5,12.799999999999999,Pleine chronique : délester,,-8,100.0,2026-10-21 12:35:16
+velov,Lyon,7583d81e4b8bb89c8efbf2a095bce2f0,MERIEUX / PAVILLONS,45.72913599999999,4.830117,16,14,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-6,100.0,2026-10-21 12:35:16
+velov,Lyon,b7f8c9e5d89cbef098b5ef408b4ccc55,ST CYR,45.799742,4.819607,12,0,11,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,6,100.0,2026-10-21 12:35:16
+velov,Lyon,cc86998c4e60b88a8d0871827da41181,PLACE D'ESPAGNE / STADE KRUGER,45.75418100000001,4.90528,22,0,21,0.5,0.0,5.236363636363635,Vide chronique : réapprovisionner,vide,11,100.0,2026-10-21 12:35:16
+velov,Lyon,cc8f3d17df4b0595955a1bf04e5a1e14,FOURVIERE,45.761991,4.821373,15,0,14,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+velov,Lyon,cfdca54ac5c3d9cb4c7e2850ab1d146e,VAULX - LA SOIE,45.760908,4.920569,17,13,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-5,100.0,2026-10-21 12:35:16
+velov,Lyon,fd7446dcaf0c8545ec729c4bf5a443c3,DEBOURG,45.73182,4.833996,20,20,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,3197d7308d2c4bbe27397bce6a2a1f62,Vallon des Auffes,43.286229,5.3510789999999995,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,6d3208f94690a69e0b9b600a11696992,Eglise des Chartreux,43.309371,5.401449,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,6fae3d33471727e279bca5e29588b75e,Bain des Dames,43.24167,5.36393,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,c20dfe24fe25df0a80f96930f63aca8d,Corniche - Malmousque,43.284214,5.349706,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+le-velo,Marseille,e8fcb0e058f4e15e5d5b0f6859e886aa,Place aux huiles,43.29307,5.3718,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+v3-bordeaux,Bordeaux,90da56770c9d5fa65da8e3e53fda4f6b,Barbey,44.82656,-0.56455,19,0,19,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+v3-bordeaux,Bordeaux,a0dcead0eb8eb8ecca92ee8d3a25a462,Gare de Caudéran,44.842422,-0.627727,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+velhop,Strasbourg,af991cea4c872c1e9254260bed77d445,Parc des Romains,48.581129,7.723453,12,0,12,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,6,100.0,2026-10-21 12:35:16
+velib,Paris,0e2b638a169bf04e728a4a023014129a,Place des Abbesses,48.884542726149725,2.3386867716908455,12,0,12,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,6,100.0,2026-10-21 12:35:16
+velib,Paris,4e5d45e2645f52e7e1c603bfd3b99569,Orteaux - Mouraud,48.85558642847872,2.4087629077646686,24,0,24,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,12,100.0,2026-10-21 12:35:16
+velib,Paris,6d5f0ea757d3d4afdd55dfbee5e5c64e,Square Simon Bolivar,48.875089888322,2.3826304078102,24,0,24,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,12,100.0,2026-10-21 12:35:16
+velib,Paris,80778031e1a033712bfc3a27a190d5dd,Beaux-Arts - Bonaparte,48.856451985396,2.3348518833517997,20,18,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-8,100.0,2026-10-21 12:35:16
+velib,Paris,b41e27b4d98234d26fa1c1b5550fdb6b,Auguste Blanqui - Corvisart,48.8300989,2.3502726,26,0,26,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,13,100.0,2026-10-21 12:35:16
+velo,Toulouse,d7affbcab2686fd71c94df2afbd943b8,VESTREPAIN - BAGATELLE,43.584492000000004,1.4110569999999998,13,1,12,0.5,0.0,8.86153846153846,Vide chronique : réapprovisionner,,6,100.0,2026-10-21 12:35:16
+velo,Toulouse,da8df6f168db3c25f7dd2fd61ddefc44,CAYRAS –CATALA,43.569408,1.5170329999999999,16,16,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-8,100.0,2026-10-21 12:35:16
+velov,Lyon,229fc32dc43fae17ce0294410f3e19f1,GARDE / AQUEDUCS,45.759519000000004,4.791152,15,0,15,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+velov,Lyon,500804230f3aa8f0f6fff32e0171f657,SALENGRO / FEYSSINE,45.782994,4.890614,20,0,18,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+velov,Lyon,6a1f22821fe8c1622de482371049d4ec,LUGDUNUM - RADISSON,45.760581,4.819617,15,0,14,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+velov,Lyon,82e1a3e20f61c397dc9e6307f10b1ae6,QUAI PAUL SÉDALLIAN,45.787522,4.814418,20,20,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-10,100.0,2026-10-21 12:35:16
+velov,Lyon,8d344eb1ede020829352f8f01f126301,CHALLEMEL LACOUR / GERLAND,45.729791,4.838138,12,11,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-5,100.0,2026-10-21 12:35:16
+velov,Lyon,a2f5b6c74f3590198ae4d4f11e9e03c8,LYON 6 - CHARLES HERNU,45.770309,4.86196,20,18,0,0.0,0.5,17.279999999999998,Pleine chronique : délester,pleine,-8,100.0,2026-10-21 12:35:16
+velov,Lyon,e7c70ea001617fa00bfb7c63aaf03a4c,PHILIPPE DE LASSALLE / PILLEMENT,45.777431,4.820526,13,1,11,0.5,0.0,26.584615384615383,Vide chronique : réapprovisionner,,6,100.0,2026-10-21 12:35:16
+vlille,Lille,1af9936132175d01f5379d23a4d64dfb,Buisson,50.656487,3.088004,16,0,16,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+vlille,Lille,7f24216d8a8d72cc7551e58ddc4bd34b,General de Gaulle,50.645267,3.1005159999999994,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+vlille,Lille,d6319b8a0d2a754780d06272ebcd6150,Champ de Mars,50.63778,3.050661,40,0,40,0.5,0.0,5.76,Vide chronique : réapprovisionner,vide,20,100.0,2026-10-21 12:35:16
+bicloo,Nantes,abe1b86251a8b9fcb79fe77e484e6660,GARE DE NANTES NORD,47.21721200000001,-1.5435169999999998,40,2,38,0.5,0.0,11.52,Vide chronique : réapprovisionner,,18,100.0,2026-10-21 12:35:16
+le-velo,Marseille,490f53b16861ccb985c4c9d75b18e00b,Parc Pastré,43.239588,5.366238,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,8faca0595713057b73c61670df5221a8,Coin Joli,43.262162999999994,5.404471999999999,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,9fefb4d50b506b1af2ea3ce814566e97,Saint-Jean du Désert,43.298776,5.436433999999999,10,0,10,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,5,100.0,2026-10-21 12:35:16
+le-velo,Marseille,a0c244bfb419fb367fc1a360cd71bf42,Chutes Lavie - Guigou,43.313291,5.396838,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,a926316107049d443cb6b13796f321c9,Rolland - Platanes,43.271718,5.409959,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,ac71ae4864e32a0b73fe9d0c3ee07057,Auphan - Vaillant,43.317074999999996,5.377367,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,c59d3d8f957565e445ca29fc004b3cdc,Sainte Marguerite Schloesing,43.26949,5.40262,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+velib,Paris,0bdc332b1e1f5251f42e957fd6b0f248,Dunkerque - Trudaine,48.88215166773376,2.3463253676891327,16,0,10,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+velib,Paris,13651fb49e97d4b16ce64ba57696a9f9,Place Charles Michels,48.84640100000001,2.28502,37,35,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-17,100.0,2026-10-21 12:35:16
+velib,Paris,a5f21cf7e9bb0b13f76170597fc26e0d,Place Saint-André des Arts,48.852886173881,2.3426544293761,13,13,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-7,100.0,2026-10-21 12:35:16
+velib,Paris,be3b16bc01fd0d89024e701419c68abd,Joseph Dijon - Ornano,48.89374453351521,2.3476678133010864,37,0,35,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,19,100.0,2026-10-21 12:35:16
+velib,Paris,fbe7f88efafcd73d40aca9b6e82c619e,Pyrénées - Emmery,48.87202880542,2.3918598091484,40,0,39,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,20,100.0,2026-10-21 12:35:16
+velo,Toulouse,2e7c59a08701fac12c3d3fffc040452b,AV. DE MURET - LAFAGE,43.584339,1.4275970000000002,20,1,17,0.5,0.0,17.279999999999998,Vide chronique : réapprovisionner,,9,100.0,2026-10-21 12:35:16
+velo,Toulouse,5d047526f63abde8a76db9e360af6819,PLACE DU PONT-NEUF,43.59959800000001,1.440942,24,20,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-8,100.0,2026-10-21 12:35:16
+velo,Toulouse,68b5261c1d13d75d39c0e965345e1dc8,PLACE GUY HERSANT,43.577461,1.442964,13,0,13,0.5,0.0,8.86153846153846,Vide chronique : réapprovisionner,vide,7,100.0,2026-10-21 12:35:16
+velo,Toulouse,6e7f16fd27ed9339c73cedac748cd65c,CHALETS - DOUVILLÉ,43.613149,1.441326,15,0,14,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+velo,Toulouse,7840bf4da34df25520e5c5e15c035ceb,FITTE -  MAGNÉ,43.59521999999999,1.4325030000000003,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+velo,Toulouse,7c8644f6339c40d520bb5b62f133887e,VALADE,43.605031,1.437386,21,13,8,0.0,0.5,43.88571428571428,Pleine chronique : délester,,-3,100.0,2026-10-21 12:35:16
+velov,Lyon,1e4916d3d22089ee30d9486834167a07,CALUIRE - BRANLY / PASTEUR,45.79169000000001,4.843452,15,1,13,0.5,0.0,7.679999999999999,Vide chronique : réapprovisionner,,7,100.0,2026-10-21 12:35:16
+vlille,Lille,584af3e442d737161685b2ea58bffe16,Poste,50.71922,3.163396,6,0,6,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,3,100.0,2026-10-21 12:35:16
+vlille,Lille,67daeb2bd1bc6a8d8e53cef7990c6616,Gare d'eau,50.62911,3.02139,14,0,14,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,7,100.0,2026-10-21 12:35:16
+vlille,Lille,838da05201f0d94c2d2678e65a8c8be8,Mairie de Croix,50.679123,3.155906,24,0,24,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,12,100.0,2026-10-21 12:35:16
+le-velo,Marseille,10cc41a7b1f4ce0c93e425b5bfd17c46,Lachamp Le Clos des Iris,43.24634,5.43156,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+le-velo,Marseille,157b3094d608e50357f327391b62ba67,Foch - Boisson,43.297960999999994,5.404053,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,2a80346767e893d3a9d646eb89e05e06,Morgiou,43.225616,5.416235999999999,40,0,40,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,20,100.0,2026-10-21 12:35:16
+le-velo,Marseille,74841aeaaec41ec03ceb63eb4e1ac827,Baille - Hôpital Conception,43.289363,5.396321999999999,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,9ba22a76bfc6ee0955eec9ab073de85b,Sormiou,43.231794,5.400047,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,a9cd39ae4dff7940f15a6ef4a1a4d723,Mazargues - Almeras,43.250963000000006,5.395187,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,b3af35da27380fb9e6aebea352c79695,Place de Lenche,43.297075,5.366056999999999,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+velib,Paris,656546f7b09611cd89f2eae9c4b8b141,Gabriel Péri - Jules Ferry,48.926182814311,2.3912295762524995,25,24,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-12,100.0,2026-10-21 12:35:16
+velib,Paris,7d4a1deff9c53059e2650658661a840c,Primo Levi - Frigos,48.83094844846017,2.3796535159279597,34,34,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-17,100.0,2026-10-21 12:35:16
+velib,Paris,b683174dfca691228c11a19d794d1b71,Guillaume Tell - Parc Henri Barbusse,48.889589258940084,2.4198862910270695,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+velib,Paris,ed48e8a94a3b5e6f3cd48e0ecce358a5,Tour d'Auvergne - Rodier,48.879161,2.343698,17,0,17,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,9,100.0,2026-10-21 12:35:16
+velib,Paris,f2877971a929ffff20cf1b945e144a59,Pierre et Marie Curie - Julien Grimau,48.87071401486322,2.424097023904324,18,0,18,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,9,100.0,2026-10-21 12:35:16
+velo,Toulouse,1871e0ffdc17669c980455f004e9b50e,MONLONG - LOUP,43.554796,1.387295,13,0,13,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,7,100.0,2026-10-21 12:35:16
+velo,Toulouse,7e3c8e91012a26ec0bddb41e363018db,LARDENNE - CALQUET,43.593736,1.391125,13,12,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-6,100.0,2026-10-21 12:35:16
+velov,Lyon,0f39562eb28a32bce6748c851fa2e7a9,PLACE DE LA PAIX,45.752074,4.914659999999999,17,0,17,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,9,100.0,2026-10-21 12:35:16
+velov,Lyon,9d25d1642dde4a21d45b662e9febcca8,POINT DU JOUR / GRANGES,45.756204,4.802727,13,0,12,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,7,100.0,2026-10-21 12:35:16
+velov,Lyon,a78f4a4a2869d717baf9c3cae9c70002,PLACE LOUISE,45.75118,4.884795,16,0,15,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+vlille,Lille,a58eecfade13fca4918d6d1c03b0175a,Lomme-Lambersart,50.64095700000001,3.018803,18,1,16,0.5,0.0,6.3999999999999995,Vide chronique : réapprovisionner,,8,100.0,2026-10-21 12:35:16
+vlille,Lille,dad5cb1e21052618cdd987ede0f26164,Pompidou,50.65547,3.064989,24,0,24,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,12,100.0,2026-10-21 12:35:16
+vlille,Lille,e61495d298dac72f5b6bb40b920168d2,Delesalle Mediatheque,50.63237,3.0662729999999994,18,0,18,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,9,100.0,2026-10-21 12:35:16
+le-velo,Marseille,48e78c3efa22e3b63189dd073a7bed58,Louis Armand,43.299586,5.413265,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,86990148d984d6d93621dddd0c3c999f,Friche Belle de Mai,43.30958900000001,5.390258,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,cf085f978e816050217d6ee3d9b9b344,Canebiere - Beauvau,43.295279,5.375048,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+le-velo,Marseille,dc58b8957851ce2eb50dfc948cda1da2,Quai du Port,43.29573,5.367355,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,e6cbffd040cf0264468973fd87c1ff14,Sainte - Notre-Dame,43.291672,5.371569,20,0,19,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,e90708c8c8ae0953ae51a6dfb1b658d9,Gibbes - Calvet,43.32495,5.38301,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,f4b4c6894dabe7367ff7068c977d8e7c,Jean Bouin,43.26563099999999,5.403472,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+velhop,Strasbourg,a26aaec0fac4fb2585d44a5a8ec0c2af,République,48.587757,7.755487,10,0,10,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,5,100.0,2026-10-21 12:35:16
+velib,Paris,12a3d30bc88bb25f6f8028b44bc63389,Montreuil - République,48.85026349463687,2.4345204234123234,25,0,24,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,13,100.0,2026-10-21 12:35:16
+velib,Paris,97a61a9cd77866e269df86547624c2b5,Palais des Sports,48.833468517426006,2.2858720645308,22,22,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-11,100.0,2026-10-21 12:35:16
+velib,Paris,f69b6961ea8e4632e8c8049b2fde6e9b,Mairie du 16ème,48.863936848472,2.2765953093767166,35,0,35,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,18,100.0,2026-10-21 12:35:16
+velo,Toulouse,113bd27681c3be229967cc80dd7ad1b7,VIDAL - SAINT-JÉRÔME,43.603205,1.448118,25,22,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-10,100.0,2026-10-21 12:35:16
+velo,Toulouse,b1667afc5f3aa11df285a2d1c70bdcf0,UNIV. PAUL SABATIER MÉTRO,43.561074,1.462928,32,17,13,0.0,0.5,46.8,Pleine chronique : délester,,-1,100.0,2026-10-21 12:35:16
+velo,Toulouse,bc5ec90e03b071a2dd8c34d0e86d7df9,ILE DU RAMIER - PASSERELLE CONTI,43.580259000000005,1.434156,13,0,13,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,7,100.0,2026-10-21 12:35:16
+velo,Toulouse,fedc47ee92accfb68965242f0428afff,CHAUSSAS - DAUDET,43.619704000000006,1.429176,19,3,14,0.5,0.0,18.189473684210526,Vide chronique : réapprovisionner,,7,100.0,2026-10-21 12:35:16
+velo,Toulouse,ff1b2fe123dcdfa378b3f7509747754b,JOLIMONT MÉTRO,43.61432,1.461721,13,0,13,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,7,100.0,2026-10-21 12:35:16
+velov,Lyon,cab9652d160f2084e3f87680a6f48ddf,PLACE STALINGRAD,45.749716,4.853345,18,0,18,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,9,100.0,2026-10-21 12:35:16
+velov,Lyon,cb0ee5cd58c7b3eaaeeef668ab9fc084,VINATIER,45.741921999999995,4.894068,20,20,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-10,100.0,2026-10-21 12:35:16
+velov,Lyon,db958fb874c0e16c670cc0253409af7b,CONFLUENCE / DARSE,45.743317,4.815747000000001,22,20,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-9,100.0,2026-10-21 12:35:16
+velov,Lyon,f542ffe5844c34241c16a95bcd0f46bc,ALBÉRIC PONT,45.753452,4.8044009999999995,16,0,16,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+le-velo,Marseille,6171d5b8db0217f424063057259281ff,Stade Bombardière,43.317108,5.437064,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+le-velo,Marseille,a20f0e35e64c2efa027b123dd39d8c93,Luminy - Parc National des Calanques,43.231562,5.436933,40,0,40,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,20,100.0,2026-10-21 12:35:16
+le-velo,Marseille,c9f8e82a91168ec93b68b342fdc03232,Val Plan,43.335010000000004,5.433129999999999,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,ce27b1816dfe2b4d85fe1b140dd976b4,Zoccola,43.3209,5.367666,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,f72238e57fa387e44724a25fdc47d5b0,Aiguier CNRS,43.25621999999999,5.40463,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,fdb426d203a2c2310f67a146e8bfa40c,Promenade Pompidou David,43.26178199999999,5.374515,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+velib,Paris,04aef8f9cd44c6932b5814ed23d35c54,Place du Canada,48.865346269362995,2.3101937879647996,58,57,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-28,100.0,2026-10-21 12:35:16
+velib,Paris,282ed329db5ce418efeb668f71ca6e80,Sorbier - Ménilmontant,48.868542395661,2.3897721245885,24,0,24,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,12,100.0,2026-10-21 12:35:16
+velib,Paris,37f52e87678de52101456c4e9b386b1b,BNF - Bibliothèque Nationale de France,48.8350268238,2.3760157451034,42,67,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-46,100.0,2026-10-21 12:35:16
+velib,Paris,39d8fc61230545443118ddd46ed13027,Mahatma Gandhi,48.876355999999994,2.264205,26,25,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-12,100.0,2026-10-21 12:35:16
+velib,Paris,53384e8a5bfec57267eb3aacba0a41aa,Square Raymond Souplex,48.89183721478911,2.335426103165901,52,0,49,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,26,100.0,2026-10-21 12:35:16
+velib,Paris,9b372295bfdf1439b536be8a8379e24e,Saint-Didier - Raymond Poincaré,48.86642312020962,2.285863497192411,17,0,15,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,9,100.0,2026-10-21 12:35:16
+velib,Paris,dbf093a8a73193e48da63e83518e7fa5,Lepic - Armée d'Orient,48.887536403814,2.3343077301979,24,0,23,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,12,100.0,2026-10-21 12:35:16
+velib,Paris,e07b13c399e83341eb53b4624f56231b,Verger - Colonel Guichard,48.816376985087,2.2670380088932,29,0,29,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+velib,Paris,ee2651f0a35203332b41f4e64a2358a6,Jacquier - Didot,48.829533362922795,2.318179272115231,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+velo,Toulouse,857447f7eee03e1ebf532ec790e7b82a,MARIN - REBOUL,43.58146299999999,1.3797689999999998,18,18,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-9,100.0,2026-10-21 12:35:16
+velo,Toulouse,90743290a8dcdb3329db70dc59112077,RTE DE BLAGNAC - PUCCINI,43.61451399999999,1.411161,18,0,16,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,9,100.0,2026-10-21 12:35:16
+velo,Toulouse,97617378facec70503e0f8a665cce66c,BEDOUCE - MARNE,43.581506,1.4623410000000001,20,1,19,0.5,0.0,5.76,Vide chronique : réapprovisionner,,9,100.0,2026-10-21 12:35:16
+velo,Toulouse,cc027f08f7e527d314d54a0dba1dd82d,PLACE ROGER LOUPIAC,43.648121,1.450024,13,1,11,0.5,0.0,8.86153846153846,Vide chronique : réapprovisionner,,6,100.0,2026-10-21 12:35:16
+velo,Toulouse,ea62d773b3e86dd844870e455530b8c8,CH. DE TOURNEFEUILLE - LESBRE,43.597281,1.3696649999999997,13,0,12,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,7,100.0,2026-10-21 12:35:16
+velo,Toulouse,f2231910ff5e3670ac9d04fef9496796,EGLISE AUCAMVILLE,43.665305,1.4303229999999998,13,1,11,0.5,0.0,8.86153846153846,Vide chronique : réapprovisionner,,6,100.0,2026-10-21 12:35:16
+velomagg,Montpellier,ce2ffbbb4d1c0f75d12abcec9a8f62d0,Marie Caizergues,43.619870999999996,3.8738120000000005,8,0,8,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,4,100.0,2026-10-21 12:35:16
+velov,Lyon,73700f49538e28ac8b50a6440da11861,SAINT EXUPÉRY,45.758874,4.878683,15,0,15,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+velov,Lyon,8129ced2951386ff85f27804e53fb82d,KIMMERLING,45.752923,4.898891,16,0,15,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+velov,Lyon,9b47a2e7fcb25d9542fdeef80c7481a5,ALBIGNY - GARE,45.874978,4.833024000000001,18,18,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-9,100.0,2026-10-21 12:35:16
+velov,Lyon,a2538c39a29c935025c79de6b0a584c0,STE FOY - PLACE ST LUC,45.74958800000001,4.800967,15,0,15,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+velov,Lyon,fb611c6e67f856c7b866c8e605a886d8,PLACE DES COMPAGNONS DE LA CHANSON,45.75653499999999,4.796616,18,0,17,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,9,100.0,2026-10-21 12:35:16
+le-velo,Marseille,1305368b25e2af76a084edccdffd8abe,Rond Point du Prado,43.27312799999999,5.390726999999999,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+le-velo,Marseille,5a30ba8c038d5031571dcf896c5aa41e,Moretti - Gibbes,43.32343,5.38501,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+le-velo,Marseille,7c2b009cf92441ab0f4c723040f75cdb,La Grognarde,43.29494,5.43316,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,7c5c092531755f90d278cb6b35831e53,Les Borromées,43.30125,5.4312499999999995,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,95b891c8f99bc25736b02e32138ee5f2,Livon - Vieux-Port,43.29231099999999,5.360731,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,9856a5256410c56160570d763139c35e,Hôpital Sainte-Marguerite,43.25926900000001,5.40899,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,c5a3da30f294565cc6ac9f5040804642,Montolivet,43.31712099999999,5.423936,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,eb7442bbfbe673da632575bcdddcc52e,Huveaune - Borely,43.262023,5.379296,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+v3-bordeaux,Bordeaux,7bed6b706dfa2e7728952f6f2489063e,Ilot Gare St-Jean,44.826202,-0.557041,19,0,19,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+v3-bordeaux,Bordeaux,d13686f2eb9b9252e439612cd748ff6d,Ilot Cap Sciences,44.860149,-0.554283,5,0,5,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,3,100.0,2026-10-21 12:35:16
+velib,Paris,04a30da088338d28544252beeacbc9e5,Bridaine - Lamandé,48.886207399999996,2.3206239000000006,29,0,27,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+velib,Paris,66011897fd7101a7bb10b9e85558fe53,Evariste Galois,48.873341356228,2.4133544409574,21,0,21,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,11,100.0,2026-10-21 12:35:16
+velib,Paris,6601de08f7e23983c000398043585558,Paul Signac - Aristide Briand,48.869502621564,2.450226098299,35,0,34,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,18,100.0,2026-10-21 12:35:16
+velib,Paris,7a55227599469e49e1f5dbadd2921c65,Cimetière d'Issy-les-Moulineaux,48.817699773925,2.2609312087297,24,0,24,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,12,100.0,2026-10-21 12:35:16
+velib,Paris,84a06befc8d25d3673e2239ee3e417ae,Moulin de Pierre - Abbé Grégoire,48.82203618838201,2.2754641655975,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+velib,Paris,ade4ab3d7418c90727d6ab6dff761511,Jean-Jacques Rousseau - Deux Ecus,48.86297805972131,2.3414635285735126,22,22,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-11,100.0,2026-10-21 12:35:16
+velib,Paris,bac8a7672d8084757dd5f21bfdc1cfc2,Henri Barbusse - Gabriel Péri,48.801773795836,2.2874166362216,28,0,27,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,14,100.0,2026-10-21 12:35:16
+velib,Paris,cc045e8ede1dd88800eae4404ded7e00,Jessaint - Marx Dormoy,48.884845431064,2.3589304089545995,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+velo,Toulouse,3a32bd7c8663b77c2a92b4d9d859a9db,PARC DE LA VIOLETTE,43.654363,1.438131,13,1,11,0.5,0.0,8.86153846153846,Vide chronique : réapprovisionner,,6,100.0,2026-10-21 12:35:16
+velo,Toulouse,97b78a916b55907a78a765a8a17b5d15,POIDS DE L'HUILE,43.60419000000001,1.445475,19,16,3,0.0,0.5,18.189473684210526,Pleine chronique : délester,,-7,100.0,2026-10-21 12:35:16
+velomagg,Montpellier,759e034eb90e0ea60ba9c88fbe62015c,Rondelet,43.603038,3.875796,16,0,16,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+velov,Lyon,24335323a0212495d0603ce3af88ec67,CALUIRE - SAINT-CLAIR,45.785464999999995,4.847838,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+velov,Lyon,837aeffe8f8d20b6649eff825fbc26bd,ANATOLE FRANCE,45.769837,4.889629,10,0,10,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,5,100.0,2026-10-21 12:35:16
+vlille,Lille,2e49a0fdb980c402a2642f1158fe6c45,Rue Saint Blaise,50.72879799999999,3.158835,6,0,6,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,3,100.0,2026-10-21 12:35:16
+vlille,Lille,ac4b40c8f1d7a5475a683c404f3af16d,Fort de Mons,50.64208,3.119232,20,0,20,0.5,0.0,5.76,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+bicloo,Nantes,75de70e4721552d6af29e17642b2c3d6,CANCLAUX,47.214334,-1.5749250000000001,15,0,15,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+le-velo,Marseille,14becc6bd1982026c0fc439ca8bea541,IUT Saint Jérôme,43.341354,5.409118,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,2c94b226005e2dfb56dd72636cf65418,Bon Secours - Huilerie,43.319929,5.381694,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,3e4776bfb1e3eef1f688532d05e22274,Strasbourg - Leca,43.307945,5.376487,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,4ae58650e08e3fdb98f320826a0fb65b,Pierre Paraf,43.330205,5.390362,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,a6e39cfc24e05eba6c9d548ce1a90849,Romain Rolland,43.27514,5.41585,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+le-velo,Marseille,b7f448b5ad5c20295027d7a3e2106f7d,Pont de Vivaux,43.27996000000001,5.416622,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,d67c418d385cf7cdf12ab84ae86225f7,Grand Rue,43.297839,5.370991,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,d9dcb8d56d7e90c89b56243631310845,Hambourg Rond Point Guerre,43.250035,5.389139,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,dbac21531c3f10610ac86c75a5d2f493,Jean Moulin - Sainte Baume,43.287153999999994,5.399979000000001,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,f21af6bc62e36810a65de5866302587f,Place Dalmas,43.322872,5.382756,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,fcff6c5b82ace50a5dc66c8d6515e030,Vieille Chapelle,43.24790000000001,5.374457,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+v3-bordeaux,Bordeaux,7efd512c797f8ab5610380254cc93900,Promis,44.83876800000001,-0.551774,16,0,16,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+v3-bordeaux,Bordeaux,e66d3d628c926876f914a6e0bf979453,Merignac Quatre Chemins,44.832420000000006,-0.64594,18,0,18,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,9,100.0,2026-10-21 12:35:16
+v3-bordeaux,Bordeaux,f090d800169bf47fe059ad0899fc210e,Le Grand Louis,44.86105700000001,-0.6421960000000001,16,0,16,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+velib,Paris,10aae04242280738ae20ee254e2868c6,Place du Maréchal de Lattre de Tassigny,48.821707715257055,2.2853431485432423,27,0,27,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,14,100.0,2026-10-21 12:35:16
+velib,Paris,1f74ab81295c9ceed1a5c6933aee68bc,Henri Chevreau - Couronnes,48.87033205312931,2.388777695596218,27,0,27,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,14,100.0,2026-10-21 12:35:16
+velib,Paris,a0438ebf45ccced9dd13d06641b86e7a,Lally-Tollendal - Armand Carrel,48.882700662210716,2.374717555940151,28,0,27,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,14,100.0,2026-10-21 12:35:16
+velib,Paris,c07a274f282db2f80eedc179128a1588,Bas - Gabriel Péri,48.91585580539624,2.2948095202445984,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+velo,Toulouse,4a1d6f5e757ae23e2e089e07a6de61f4,CASTRES - ACHIARY,43.600828,1.473579,17,0,16,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,9,100.0,2026-10-21 12:35:16
+velo,Toulouse,c48485290a30d668e05b803600530d79,NÉGRENEYS - ANGES,43.620308,1.440963,13,0,12,0.5,0.0,8.86153846153846,Vide chronique : réapprovisionner,vide,7,100.0,2026-10-21 12:35:16
+velo,Toulouse,c5d1f9e5154823d6ecd46fbd8bb371f8,LYON - SÉMARD,43.614083,1.4511579999999997,25,0,25,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,13,100.0,2026-10-21 12:35:16
+velov,Lyon,11b3621f4d9437e0b8f9c8950bf9ac1a,VEYRON / TCHEKOSLOVAQUES,45.74545,4.85803,15,0,14,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+vlille,Lille,27f9b1605e731669e36011c785f8a330,Rue des Anges,50.719878,3.156464,6,0,6,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,3,100.0,2026-10-21 12:35:16
+vlille,Lille,5ae7f3ca69a613e16846e4235a56cc8f,Louis Braille,50.637103,3.097538,12,0,12,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,6,100.0,2026-10-21 12:35:16
+vlille,Lille,756aaea6959ff82dc3cc6159bab6b7f3,Carliers,50.710735,3.159881,12,0,12,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,6,100.0,2026-10-21 12:35:16
+vlille,Lille,a6772c9cd105cdecdba6867f7a479d43,Bois Blancs,50.63404500000001,3.030778,22,0,22,0.5,0.0,5.236363636363635,Vide chronique : réapprovisionner,vide,11,100.0,2026-10-21 12:35:16
+vlille,Lille,db28e9a0c2fd51b07c44f35ffd9c3ece,Square des Meres,50.63416999999999,3.095958,25,0,25,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,13,100.0,2026-10-21 12:35:16
+bicloo,Nantes,69ad0c2968dbdc35cd70a8e25bd74914,HUIT MAI,47.189212,-1.550828,15,0,15,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+le-velo,Marseille,a15e1fdc35118d87be39b51fbd767689,Obélisque de Mazargues,43.25101999999999,5.403213999999999,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo-star,Rennes,6d26bace800719860e71ae8c528044af,Croix Saint-Hélier,48.103044000000004,-1.662078,20,0,20,0.5,0.0,5.76,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+velib,Paris,3cd0708a32246f89a7d2ec3fe9c51851,Quai de la Gare - Pont de Bercy,48.83730787972001,2.3740861260598005,30,30,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-15,100.0,2026-10-21 12:35:16
+velib,Paris,6804f69932aa639140cd339c2d3033a8,Raspail - Chomel,48.85223316430301,2.3266580700874004,49,49,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-25,100.0,2026-10-21 12:35:16
+velib,Paris,895b102f0932674a199d15ba51d85ccf,Petit Palais,48.8667692,2.3157655,46,46,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-23,100.0,2026-10-21 12:35:16
+velib,Paris,ac326e377ca88631993b205d6942832e,Basilique,48.93626891059109,2.3588666820200914,22,21,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-10,100.0,2026-10-21 12:35:16
+velib,Paris,bfd0da5c08ed6b5437782cec359cda56,Convention - Campus de Bobigny,48.914920058263995,2.4172238067445,32,30,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-14,100.0,2026-10-21 12:35:16
+velo,Toulouse,5676a0fe05c7b106ed110ba52ce94710,SÉJOURNÉ - AMIDONNIERS,43.605686999999996,1.428225,17,0,17,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,9,100.0,2026-10-21 12:35:16
+velomagg,Montpellier,debacf8c5a0429fde432bdf4743dae0a,Sud De France,43.59562,3.9235,8,8,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-4,100.0,2026-10-21 12:35:16
+velov,Lyon,cc042ee6e679361ffb543a9fa3c8b71a,CONFLUENCE HÔTEL DE RÉGION,45.740675,4.819284,28,25,3,0.0,0.5,12.342857142857142,Pleine chronique : délester,,-11,100.0,2026-10-21 12:35:16
+velov,Lyon,de9fadd91ccd84726aacf6e886884b6a,RAMBAUD / ECOLE DU CINÉMA,45.745824,4.817176,30,28,2,0.0,0.5,7.679999999999999,Pleine chronique : délester,,-13,100.0,2026-10-21 12:35:16
+velov,Lyon,df32b5d2c2353cc7282ffd23369423a9,PLACE DU LAC,45.758974,4.853599,19,19,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-10,100.0,2026-10-21 12:35:16
+vlille,Lille,66bf3e48f5de16d56f039070d8fdbd6b,Loos Clemenceau,50.614392,3.010842,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+bicloo,Nantes,2c056dd88a109bd2a8cb2b8d14052a0b,RÉGION,47.210742,-1.525933,22,0,22,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,11,100.0,2026-10-21 12:35:16
+le-velo,Marseille,188508bd9629613359e2444b9851fea9,Bastide St Jean,43.29888,5.42088,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,1ca9b8d1416f93c16f88f50bf99cc09d,Chemin de l'armée d'afrique,43.28859,5.4252329999999995,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+le-velo,Marseille,5b85756fb905aed5a68c4db8c0bf8c62,Canebière Saint-Ferreol,43.296278,5.377119999999999,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,67e0bd6739c559ed39992713c030f313,Euromediterrannee Gantes,43.309076,5.368465,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,79b0b3c9de35a130060ad74245215a0d,Lapin Blanc,43.246609,5.381688,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+le-velo,Marseille,805b176774d9556c6dce45749064da7d,Cantini,43.27918499999999,5.395692,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,9cb974822a39da98f9d34f29f8e651cb,Cité Radieuse,43.264971,5.395435,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,d69b86066f0d72ded65159143344d587,La rouvière,43.253307,5.421796999999999,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+velib,Paris,42706f6a7e74dd0c691b99ca6c70e0bf,Les Halles - Saint-Eustache,48.86362695901682,2.342623919248581,32,31,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-15,100.0,2026-10-21 12:35:16
+velib,Paris,681dc5faed71ff141b9538db0677139b,Piat - Parc de Belleville,48.87195626635528,2.3849813902780954,21,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,11,100.0,2026-10-21 12:35:16
+velib,Paris,975344ae3b1ec6ffc978f7e6ff7a228b,Gare de Bellevue,48.819240468557204,2.2295309230685234,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+velib,Paris,ee559f80a35ff3a4dac9efd6b7cbe380,Pergolèse - Marbeau,48.873568706869,2.2815125225299,27,0,26,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,14,100.0,2026-10-21 12:35:16
+velo,Toulouse,549827cc8a1648ce50d8c0adb87bdea5,LIFFARD - RÈGUELONGUE,43.559779999999996,1.37828,13,0,12,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,7,100.0,2026-10-21 12:35:16
+velo,Toulouse,d15632da3eb10104c52ca47c320ac81d,PLACE GEORGES BRASSENS,43.64883,1.3763380000000003,16,16,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-8,100.0,2026-10-21 12:35:16
+velo,Toulouse,df06fe342832e014919a696d7b352d1a,EGLISE DE LALANDE,43.646547,1.431152,13,0,12,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,7,100.0,2026-10-21 12:35:16
+velo,Toulouse,f193977d06e645d49b14b5374be6718d,HALL COMMINGES,43.609075,1.3317060000000003,16,0,16,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+velomagg,Montpellier,b46e9cbc2594fea63928f460ae85fea9,Nouveau Saint-Roch,43.599817,3.875757,8,0,8,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,4,100.0,2026-10-21 12:35:16
+velov,Lyon,bdabd6cfc8e3203cb11077929eddf6c1,RÉPUBLIQUE / FERRANDIÈRE,45.762184,4.836023,25,25,0,0.0,0.5,23.04,Pleine chronique : délester,pleine,-13,100.0,2026-10-21 12:35:16
+vlille,Lille,5eb445c017bf92e661cf6bc7704e8a32,Bourse du Travail,50.62605200000001,3.0908979999999997,20,0,20,0.5,0.0,5.76,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+bicloo,Nantes,11237f5db310c9046a7f13ed599934ca,GARE DE NANTES SUD,47.215505,-1.5428440000000003,70,0,70,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,35,100.0,2026-10-21 12:35:16
+bicloo,Nantes,233fa38890b9666eefb0eca1d7c3dbc5,DALBY,47.223919,-1.5300960000000001,18,0,18,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,9,100.0,2026-10-21 12:35:16
+le-velo,Marseille,003c4110489f4245b157cfb69cfc5e63,Bougainville Lessep Sud,43.31895,5.368009999999999,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,08e77c7501487535634e1b9a57b05cdc,Place du Terrail,43.280391,5.369308,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,307d4a4a6316097b53cd4c5aaa8a47d1,MUCEM,43.298432999999996,5.362774000000001,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+le-velo,Marseille,347247b1ba935aab53a81e7e37416d3a,Michelet - Huveaune,43.267966,5.393976000000001,40,0,40,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,20,100.0,2026-10-21 12:35:16
+le-velo,Marseille,7e456479f1dd847596080eeeb2523660,Baumettes,43.23378,5.41232,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+le-velo,Marseille,987ae706a8fcd5c97b48d98a4839aacd,Entrée du parc national des calanques,43.230520000000006,5.35489,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+le-velo,Marseille,c0c575159a9e8721ea7dfdc92e9ce56c,Allar,43.324771,5.365569999999999,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,c200257e9f4e9bbb612fa27cec560d55,Carthage - Engaliere,43.2378,5.36635,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+le-velo,Marseille,fba122ee5c437dc23096e5a3ecadc9e7,La Major,43.299215,5.365548,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+v3-bordeaux,Bordeaux,3d56a43dc5ea4bd4b31398bfd74a1ef0,Ilot Place du Maucaillou,44.83259,-0.5670099999999999,5,0,5,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,3,100.0,2026-10-21 12:35:16
+v3-bordeaux,Bordeaux,65e7e48d5de8eb3f8e2b10ab31e21f13,Ilot Barrière de Bègles,44.8131981,-0.5642255,5,5,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-3,100.0,2026-10-21 12:35:16
+velib,Paris,1a8815e3b98b58bab93c2701f6b3b145,Pyrénées - Avron,48.853246898211985,2.405871044529538,32,0,31,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,16,100.0,2026-10-21 12:35:16
+velib,Paris,323ff75e83a2550646f17439b335ff4a,Place Alphonse Deville,48.85018826266201,2.3275961726904,23,20,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-9,100.0,2026-10-21 12:35:16
+velib,Paris,4108b785296de89b10b751f5bdfbd586,Sibelle - Alésia,48.82670175853922,2.3384983465075493,37,0,36,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,19,100.0,2026-10-21 12:35:16
+velib,Paris,4213d41d8c2e949ffb6e035548bae5a6,Saint Pères - Saint Germain,48.85372967526501,2.3300181032703,22,22,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-11,100.0,2026-10-21 12:35:16
+velib,Paris,78c4b10cec0bd84b4956be84120c1546,Coquillière - Louvre,48.863795909662,2.3425736278296,21,21,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-11,100.0,2026-10-21 12:35:16
+velib,Paris,7da27dac71c34dccfc69d1be53dde793,Gambetta - Tourelles,48.875337902264,2.4059921130538,20,0,16,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+velib,Paris,87f0c36c975001dfef7afda904d36892,Place de Rhin et Danube,48.88192765861766,2.392586767673493,30,0,29,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+velib,Paris,bff05c081ad5a7597f093b0b4fbd8e5f,Saint-Germain - Verdun,48.882877330093,2.4331868384644006,30,0,29,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+velib,Paris,ce4e5a97532b51473d0bf57c118d4a4f,Pyrénées - Plaine,48.85026702458,2.4062821269035,12,0,11,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,6,100.0,2026-10-21 12:35:16
+velib,Paris,d269daa39170597c1baba53d89d7e887,Barbès - Monique Maunoury,48.81552718820216,2.3687169334905405,40,0,40,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,20,100.0,2026-10-21 12:35:16
+velib,Paris,eec90e5124bbe51a7eb1635f11ecae64,Square d'Anvers,48.88263348431099,2.3448844062122,33,0,32,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,17,100.0,2026-10-21 12:35:16
+velo,Toulouse,ea2d65747b79b65ab3859372ef6477d5,PORT ST-SAUVEUR - SABATIER,43.596652,1.45564,20,0,18,0.5,0.0,5.76,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+velov,Lyon,20f0aec2a3f66863f731427616bfb5de,BEAUVOIR / MAROT,45.73674,4.834105999999999,20,20,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-10,100.0,2026-10-21 12:35:16
+velov,Lyon,fbda2971e721f4fd96564efa3da33e71,PLACE ANTOINETTE,45.753683,4.889285,21,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,11,100.0,2026-10-21 12:35:16
+le-velo,Marseille,5655a12f8c432d9c1749a3380907f882,Plage de la Pointe Rouge,43.243884,5.370736,40,0,40,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,20,100.0,2026-10-21 12:35:16
+le-velo,Marseille,57c6c20ccabd34d14d28a149755d9090,La Criée,43.29274800000001,5.368402,20,0,18,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,65d73b24905326f9c93bac2458e6eb26,Paoli Calmettes,43.26366000000001,5.41087,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,9393c27a7a7b79090db379c2d9f67d1a,Madrague de Montredon,43.231925999999994,5.355532,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,995d8dacbcec0b98b58d14ac6cfa7279,Rouet,43.283502,5.386471,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,aa2c0ad654c031814ec063e29c5fe7e4,Valmont - Redon,43.244662,5.425279,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,c711a9e654e4a64d20eb639a13a61e2c,Lyon - Zoccola,43.323417,5.367669,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,deedd658be63073d4c66adf44f793376,Chutes Lavie - Dahdah,43.309047,5.396549,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+velib,Paris,185a5037617ebaca787eac9f98ccaa2c,Haxo - Darcy,48.870493041975,2.404957212224,22,0,21,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,11,100.0,2026-10-21 12:35:16
+velib,Paris,19a2590f3034b1685956bdf78ad4a6ea,Mairie du Kremlin-Bicêtre,48.81191981537702,2.3570189997553825,25,0,25,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,13,100.0,2026-10-21 12:35:16
+velib,Paris,6387eaf99dbe327adaab47babd7a913d,Parc Suzanne Lenglen,48.833250690537874,2.2765403240919113,52,45,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-19,100.0,2026-10-21 12:35:16
+velib,Paris,6f758e5af2327521e408ec046d8bd838,Halle Freyssinet - Parvis Alan Turing,48.832846814471,2.3711421713233,37,37,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-19,100.0,2026-10-21 12:35:16
+velib,Paris,a31926c8d82c4c77611d9b3204d56707,Place Ginette Hamelin,48.837853,2.382064,51,48,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-23,100.0,2026-10-21 12:35:16
+velib,Paris,e2a44bdc05e0ffc5241e4ebb11c57969,Daunou - Louis le Grand,48.869113,2.3325150000000003,32,32,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-16,100.0,2026-10-21 12:35:16
+velib,Paris,f152cef37bb3fa7cb92f964483097d05,Gare du Nord - Demarquay,48.881154,2.358411,30,0,29,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+velo,Toulouse,14bcd45926574d2e7f85008608a8f306,SOUPETARD - GENÊTS,43.610183,1.4724009999999998,13,0,12,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,7,100.0,2026-10-21 12:35:16
+velo,Toulouse,2beb61c960b89983d7dce9558bcf3432,OCCITANE - SIENNE,43.550278,1.501549,16,16,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-8,100.0,2026-10-21 12:35:16
+velo,Toulouse,6eb3a5104906c2b5edcc7221c69f4cad,ST-SERNIN - GATIEN-ARNOULT,43.609022,1.441105,15,0,15,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+velo,Toulouse,a9ca538e4369f8877708c2a5597f048d,MOULIS - CROIX-BÉNITE,43.664331,1.434191,12,0,12,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,6,100.0,2026-10-21 12:35:16
+velov,Lyon,057888a751b49d2ba5334fa57c14e033,PLACE AMPÈRE,45.753049,4.828297,10,9,0,0.0,0.5,11.52,Pleine chronique : délester,pleine,-4,100.0,2026-10-21 12:35:16
+velov,Lyon,09b7a8ef4cc3da5e30320d89c16635c7,INSTITUT LUMIERE,45.74582800000001,4.870631,18,1,17,0.5,0.0,6.3999999999999995,Vide chronique : réapprovisionner,,8,100.0,2026-10-21 12:35:16
+velov,Lyon,300c361b9e2407631efb90a562719b49,BOUVIER,45.77948700000001,4.891692,16,0,15,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+velov,Lyon,64e9891e30daf3c06928fce92d5d8fa6,LAENNEC / PINEL,45.735375,4.88954,15,15,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-8,100.0,2026-10-21 12:35:16
+velov,Lyon,a3d4dab6c567f43a260f5ba8fa884247,VALDO / RIVET,45.750497,4.788819,18,0,18,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,9,100.0,2026-10-21 12:35:16
+velov,Lyon,b6d171947bb56ff1916026decc08afec,PLACE MARENGO,45.759176,4.875958,27,0,27,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,14,100.0,2026-10-21 12:35:16
+vlille,Lille,521d6b5b58962804d8d6a6d6e728a89c,Avenue Millet,50.72498000000001,3.150884,12,0,12,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,6,100.0,2026-10-21 12:35:16
+le-velo,Marseille,0b2e5d70a12ed696d391b47841afbb54,Augustin Aubert,43.267959,5.402684999999999,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,10546f4bb859481992261ea1859610b0,Blancarde - Gare SNCF,43.296263,5.406010000000001,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,1dcde736e716622747d59b3d330b4831,Char Jeanne d'Arc - Notre Dame de La Garde,43.28604000000001,5.370677,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,1e8a544a20c795554f0101f1a8c9fe9b,Sainte-Marguerite Dromel,43.27058499999999,5.402538,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+le-velo,Marseille,451654c170b3dcd39ff8e7c813211a7b,Plage du Prophète,43.273606,5.362709,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,cbd6a829199dfd5245c8d08491d683a4,Saména,43.229260000000004,5.35377,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,d6b9effa31e7408e294843fb16227a26,Prado - Michelet,43.272119,5.391759999999999,40,0,40,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,20,100.0,2026-10-21 12:35:16
+le-velo,Marseille,e6fbaa88ed2704353c210855a5570147,Negresko - Paulet,43.269319,5.389397,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,e8403ab725b566f185fef8c16fd5e23f,Hôtel de Ville,43.296153,5.37152,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+v3-bordeaux,Bordeaux,a593edfe848cb3f27ab96f529e146f2e,Ilot Les Hangars,44.857934,-0.558128,10,0,10,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,5,100.0,2026-10-21 12:35:16
+velib,Paris,162bea1d7db757cb41419fc820ab1332,Borrégo - Gambetta,48.873304970455315,2.4014145880937576,25,0,25,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,13,100.0,2026-10-21 12:35:16
+velib,Paris,626aae3b367a4cfa9dde9e771cd171e2,Henry Farman,48.83372430280548,2.2713854536414146,16,16,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-8,100.0,2026-10-21 12:35:16
+velib,Paris,8d718350b29821ee46bbfe1636f9c6be,Général De Gaulle - Alouette,48.839109,2.4175664,26,0,26,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,13,100.0,2026-10-21 12:35:16
+velib,Paris,a362cf32ab42c2f92c5d73c81b7f8927,Tourlaque - Damrémont,48.887912943261,2.3328311485014,16,0,15,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+velo,Toulouse,014ed640671263a62afd44f55462102e,SERRES - CABANEL,43.614227,1.4379989999999998,18,0,18,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,9,100.0,2026-10-21 12:35:16
+velo,Toulouse,5306c16a53fb9d66ba5aeed3fb371494,COLLIGNON - RAISIN,43.61771199999999,1.445142,19,0,18,0.5,0.0,12.126315789473683,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+velo,Toulouse,657ac87786255b08443f8d5651e77045,ROSTAND - EIDENBENZ,43.644197,1.463566,13,5,8,0.5,0.0,44.30769230769231,Vide chronique : réapprovisionner,,2,100.0,2026-10-21 12:35:16
+velo,Toulouse,98a33187d04da035ed663c95dfd5a63a,PASSERELLE HAEDENS,43.613504,1.430339,19,2,17,0.5,0.0,12.126315789473683,Vide chronique : réapprovisionner,,8,100.0,2026-10-21 12:35:16
+velo,Toulouse,ca54b0e2cb72b6b08785b1d3856bcdeb,VOSGES - BEAUCE,43.58186799999999,1.419446,13,0,13,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,7,100.0,2026-10-21 12:35:16
+velo,Toulouse,fe2182978e6b4bc9293e9f38c58422bf,LIFFARD - SAINT-SIMON,43.564413,1.375571,13,0,13,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,7,100.0,2026-10-21 12:35:16
+velomagg,Montpellier,bb53a3b4f9bbe58f3d10bb8bcdc69e70,Médiathèque Emile Zola,43.608218,3.8931399999999994,16,0,15,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+velomagg,Montpellier,be38bd2e3eb7797aeb50d8e6aab59c13,Fac de Lettres,43.630437,3.869539,12,0,12,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,6,100.0,2026-10-21 12:35:16
+velov,Lyon,329646994bf26906bbb13b15a73bb1e5,MÉNIVAL / EISENHOWER,45.756757,4.783206,12,0,12,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,6,100.0,2026-10-21 12:35:16
+velov,Lyon,35639c0f6a4143cdcd170a9e4ceb4b98,MARTINIÈRE / MONPLAISIR,45.74086499999999,4.868244,20,1,19,0.5,0.0,5.76,Vide chronique : réapprovisionner,,9,100.0,2026-10-21 12:35:16
+velov,Lyon,356b98c8fbaa61e40822a74821dd8727,ROUVILLE,45.76968399999999,4.824607,17,0,16,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,9,100.0,2026-10-21 12:35:16
+velov,Lyon,9cec5c713d866d96c6cb7bc363d3e3a3,ROCKEFELLER / ESQUIROL,45.741336,4.885538,21,14,1,0.0,0.5,5.485714285714285,Pleine chronique : délester,,-4,100.0,2026-10-21 12:35:16
+vlille,Lille,63dad6428bc09da74515cff2edff3c89,Rue de Roubaix,50.7134,3.165011,12,0,12,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,6,100.0,2026-10-21 12:35:16
+le-velo,Marseille,116674de9b8cdce6a0d996cd4b4c20c7,National - Longchamp,43.301396000000004,5.387812,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,2cff3854ea9a45cfc6248d91b3e17f48,Sainte-Marthe - Glacière,43.317557,5.390173,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,601faa292fe79541274d19a39db55023,Centre Bourse,43.297067,5.376836,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,6112cc4f88de3c69df8a0f780105a689,Jules Guesde,43.30142899999999,5.374132,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,a2f3689edf6bf5e7d54ff8df048714ab,National - Hoche,43.311124,5.377653,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,b859bd2d494459e0d7f4a4c8559e5e1e,Base Nautique Roucas Blanc,43.265714,5.372891,40,0,40,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,20,100.0,2026-10-21 12:35:16
+le-velo,Marseille,b8ef923faba09d21750b27308a0672fd,Mendès France Huveaune,43.260218,5.375453,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,e18021e2f1570ee2dd3b8fcdcf178f2f,Baille - Vertus,43.28849400000001,5.393092,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+v3-bordeaux,Bordeaux,859208e8a225a9b28976032652a9e979,Place Buscaillet,44.870014,-0.551179,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+velib,Paris,30cf4172f57a7f82dc5927b8fdbcc551,Chateau,48.774661399959,2.3135878035462,22,0,21,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,11,100.0,2026-10-21 12:35:16
+velib,Paris,8a621999524f1f819e5fdde38cf379d7,Marc Sangnier - Porte de Vanves,48.825218683556734,2.3107116669416428,21,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,11,100.0,2026-10-21 12:35:16
+velib,Paris,cb699740ae218b77b78f662442be89ae,Stade Gaston Bouillant,48.939958667023,2.3279571813835997,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+velib,Paris,d01c235cdb4b9097d28e455e2c74be01,Noisy le Sec - Jean-Baptiste Clément,48.874515389637,2.4152836203574997,22,0,22,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,11,100.0,2026-10-21 12:35:16
+velo,Toulouse,5df49bea3127887b7c9c0f0d71076100,GLOIRE - CHIRAC,43.606975,1.473375,13,0,12,0.5,0.0,17.72307692307692,Vide chronique : réapprovisionner,vide,7,100.0,2026-10-21 12:35:16
+velo,Toulouse,62172d8807fca1e1d4a059f7ababc6e5,RODIER - PRANVILLE-NÉGRIN,43.569898,1.485423,13,12,0,0.0,0.5,17.72307692307692,Pleine chronique : délester,pleine,-6,100.0,2026-10-21 12:35:16
+velo,Toulouse,c385ab28839dabde4a2eaf36893b02cb,FRONTON - LAPIN,43.651176,1.432557,13,0,13,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,7,100.0,2026-10-21 12:35:16
+velo,Toulouse,cc6d30c49abda952ef0d5b9aac75b932,COSMONAUTES - GRIFFON,43.559298000000005,1.495916,13,12,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-6,100.0,2026-10-21 12:35:16
+velomagg,Montpellier,f9ec0f0ec7a9b6b7011611c9b4be28b4,Observatoire,43.606301,3.87724,8,0,8,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,4,100.0,2026-10-21 12:35:16
+velov,Lyon,c3dd8e71dbe5b393170cc24f998287a7,BALMONT,45.789194,4.799308,12,0,12,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,6,100.0,2026-10-21 12:35:16
+velov,Lyon,c56c9baa5aa1a69cc386c46572045cfb,PERRIN / JEAN JAURÈS,45.757924,4.885265,34,0,32,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,17,100.0,2026-10-21 12:35:16
+velov,Lyon,eb33b18dd7a5da6dea146ea4e5ec698c,DOCTEUR LONG / CAILLE,45.75254,4.894272,16,1,14,0.5,0.0,21.599999999999998,Vide chronique : réapprovisionner,,7,100.0,2026-10-21 12:35:16
+velov,Lyon,fea2edf604d1b376107f537f6e68388f,LA SALETTE,45.749627,4.795546000000001,15,0,15,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+vlille,Lille,ae91e4d950fb9df0c998c5af08942cdd,Tourcoing gare,50.716907,3.167436,18,0,18,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,9,100.0,2026-10-21 12:35:16
+le-velo,Marseille,005d8f66b82e577d345df2ab5fea33fd,Belle Vue,43.31529,5.3803589999999994,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,07bf9ef5e774fda566901c535c42597e,Schuman - Leca,43.301939,5.366286,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,2ccb050034e464f269988d4c96e6d628,Sainte-Marthe - Moretti,43.32367,5.388836,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,2f697f9fd04d55387069e6c79ef76ed3,Peupliers - Berthelot,43.337166,5.391840000000001,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,3e535d006149f9514a591e106a49858e,Place Pol Lapeyre,43.292572,5.409104,20,0,10,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,708ed54bc82e5ac02e9b141a491c18b3,Saint-Eugene,43.284533,5.358660999999999,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,7366a973a161fa2ec52a2a8cb72589e8,Place Placide Caffo,43.313571,5.384829,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,76802e9efcdfc1aa5a17506587a3d997,Corniche - Endoume,43.282743,5.350526000000001,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,86c9a596fe52f3d7e47196e64a190a96,Faculté Saint Jérôme,43.33614599999999,5.410335,30,0,30,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,15,100.0,2026-10-21 12:35:16
+le-velo,Marseille,b5e94bc755e0a26c1fd6178ebdc952ca,La Gaye,43.257079,5.411051,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,d04b1b18fdf15b99847c7bc2be840d48,Bastide Cazaulx,43.298127,5.440677,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,e21077724473ab1a2708f226ed6954fb,Livon - Pasteur,43.292004,5.357898,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,f54baf441b4ab151e0706737a71cf9e6,Hôpital Européen,43.309054,5.371777000000001,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+le-velo,Marseille,f7f128083098dc9f98668ebaa1bdf6fd,Coutellerie,43.2968,5.37291,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+v3-bordeaux,Bordeaux,6ed9da68624ec989ba73bbd2d2ec6a6d,Ilot Palais de justice,44.835862,-0.582249,9,0,9,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,5,100.0,2026-10-21 12:35:16
+velhop,Strasbourg,93c22deff746f316635780970f9f3b3b,Geispolsheim Gare,48.521222,7.684944000000001,5,5,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-3,100.0,2026-10-21 12:35:16
+velib,Paris,3f9290134bb9cc2bfabaa5ee66f4c1ae,Square du Théâtre du Garde-Chasse,48.881287375060616,2.420119643211365,50,0,49,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,25,100.0,2026-10-21 12:35:16
+velib,Paris,5b5eb9e7584013b19ee1436863a9847f,Pereire - Rennequin,48.883647828876,2.2952447086573,23,0,23,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,12,100.0,2026-10-21 12:35:16
+velib,Paris,bf7454ba878d169a278e984513d65bb6,Ordener - Poissonniers,48.891213890844654,2.351288666219873,35,0,34,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,18,100.0,2026-10-21 12:35:16
+velib,Paris,de81055bd76c6693a0e6b299185ebd56,Verdun - Pierre et Marie Curie,48.812822398263286,2.3707106709480286,26,0,25,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,13,100.0,2026-10-21 12:35:16
+velo,Toulouse,45d935998727add4e2367991595eccd1,RIEUX - CHANT DU MERLE,43.597355,1.4590630000000002,18,2,15,0.5,0.0,12.799999999999999,Vide chronique : réapprovisionner,,7,100.0,2026-10-21 12:35:16
+velo,Toulouse,6125c6cb01ce88e921915b6808e3140e,PLACE PAUL RICHÉ,43.647504,1.43286,20,0,20,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,10,100.0,2026-10-21 12:35:16
+velo,Toulouse,9b2b5f9acea726f93e402d349e51a51d,BAYONNE - FLAMBÈRE,43.608267000000005,1.389792,13,13,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-7,100.0,2026-10-21 12:35:16
+velo,Toulouse,a95cc61f90f0cf2552a214d108a364bd,HAURIOU - GARONNETTE,43.594359,1.44095,23,0,22,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,12,100.0,2026-10-21 12:35:16
+velo,Toulouse,d1c47fd76490669fa28e1113a6d5f425,RÉCOLLETS - FERETRA,43.583787,1.4432989999999999,20,2,17,0.5,0.0,11.52,Vide chronique : réapprovisionner,,8,100.0,2026-10-21 12:35:16
+velo,Toulouse,fabb538d36ec51cbd794d79c50440af8,ST-MICHEL - CASTELET,43.58585,1.447374,24,0,23,0.5,0.0,28.799999999999997,Vide chronique : réapprovisionner,vide,12,100.0,2026-10-21 12:35:16
+velo,Toulouse,fe955382d4c5962876713ff71a88d2f3,FRONTON - DUCLOS,43.644963,1.433998,18,1,17,0.5,0.0,6.3999999999999995,Vide chronique : réapprovisionner,,8,100.0,2026-10-21 12:35:16
+velomagg,Montpellier,8237f9416364cb62d24809cc23340f62,Aiguelongue,43.626163,3.8824919999999996,8,7,0,0.0,1.0,0.0,Pleine chronique : délester,pleine,-3,100.0,2026-10-21 12:35:16
+velov,Lyon,1fa4527e28beb70256299f7cb616410a,PARC DU CENTRE,45.7718977522141,4.87711619074718,28,0,28,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,14,100.0,2026-10-21 12:35:16
+velov,Lyon,3e956af805c822af845210097eb54b09,MONTEE DE L'OBSERVANCE,45.76792699999999,4.809499,15,0,14,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,8,100.0,2026-10-21 12:35:16
+velov,Lyon,7eb193b3476624e8fd4e512630cc4fd5,PLACE VARILLON (FUNICULAIRE ST JUST),45.757319,4.815064,23,0,23,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,12,100.0,2026-10-21 12:35:16
+vlille,Lille,372b905b6a873e3c7edc2a5482d2f223,Cavell,50.72271,3.1637939999999998,6,0,6,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,3,100.0,2026-10-21 12:35:16
+vlille,Lille,79fabcca726bdb10a05db09e63bc8b58,Le Corbusier,50.722343,3.170847,18,0,18,1.0,0.0,0.0,Vide chronique : réapprovisionner,vide,9,100.0,2026-10-21 12:35:16
+velib,Paris,e7089a25caa59e0eec292035bca6a561,Etienne Dolet - Place Maurice Chevalier,48.86798303359365,2.3851405311143026,47,1,45,0.6666666666666666,0.0,2.4510638297872336,Vide chronique : réapprovisionner,,23,99.3,2026-10-21 12:35:16
+velib,Paris,7735a7f0adb007c57c93516c90cc5612,Parmentier - Fontaine au Roi,48.867876705517354,2.372705978671471,48,1,46,0.6666666666666666,0.0,2.4,Vide chronique : réapprovisionner,,23,98.7,2026-10-21 12:35:16
+velib,Paris,27c45001b48e6b0c3965b412f618d813,Place Jean-Spire-Lemaître,48.846842862659294,2.452062070369721,50,0,48,0.6666666666666666,0.0,2.304,Vide chronique : réapprovisionner,vide,25,97.4,2026-10-21 12:35:16
+velib,Paris,45ed78d1a81f3acb2b888eccfbfff620,Parmentier - Abel Rabaud,48.86921273836114,2.371688821240712,52,1,49,0.6666666666666666,0.0,2.215384615384615,Vide chronique : réapprovisionner,,25,96.2,2026-10-21 12:35:16
+velov,Lyon,568809072a1e86de465aac16e6e0bb22,JAURES SAINT EXUPERY,45.757646,4.883377,25,1,23,0.5,0.0,4.608,Vide chronique : réapprovisionner,,12,96.1,2026-10-21 12:35:16
+bicloo,Nantes,bc392530a16b1f99f0356b79730d72f1,MARTYRS NANTAIS,47.206933,-1.548169,27,0,27,0.5,0.0,4.266666666666667,Vide chronique : réapprovisionner,vide,14,92.7,2026-10-21 12:35:16
+velib,Paris,5e105726e01c9c076168257bbc2b049e,Granges aux Belles - Hôpital Saint-Louis,48.874794994841004,2.3666694369849997,60,1,57,0.6666666666666666,0.0,1.9199999999999997,Vide chronique : réapprovisionner,,29,92.3,2026-10-21 12:35:16
+velov,Lyon,bd332be83a2880377fc5da4b3ab818ed,GERLAND,45.727494,4.831145,40,38,1,0.0,0.5,2.88,Pleine chronique : délester,,-18,78.8,2026-10-21 12:35:16
+velov,Lyon,61cbffac1bfcbd68f2b69f0d6d1e23c0,PORTE DES ENFANTS DU RHÔNE,45.777521,4.844922,40,1,39,0.5,0.0,2.88,Vide chronique : réapprovisionner,,19,78.8,2026-10-21 12:35:16
+velib,Paris,7678b523b0deb45d09512d7129af7355,Réunion - Avron,48.852566752033766,2.4039280687081157,26,1,25,0.3333333333333333,0.0,13.292307692307691,Vide chronique : réapprovisionner,,12,66.7,2026-10-21 12:35:16
+velov,Lyon,44b07c48659a3ff7465b8e214616f772,PLACE ROUGET DE L'ISLE,45.753975,4.867336000000001,16,0,14,0.3333333333333333,0.0,28.799999999999997,Vide chronique : réapprovisionner,vide,8,66.7,2026-10-21 12:35:16
+velib,Paris,f94d87ab888be3975dbf561bb3c4b7f3,Square Desnouettes,48.83476837934194,2.284142297394666,22,21,1,0.0,0.3333333333333333,5.236363636363635,Pleine chronique : délester,,-10,66.7,2026-10-21 12:35:16
+velib,Paris,61e5c46fd1462b710c8aeea3ec8c2c60,Bruant - Vincent Auriol,48.834848452929,2.3668264996271,25,22,3,0.0,0.3333333333333333,32.256,Pleine chronique : délester,,-10,66.7,2026-10-21 12:35:16
+velib,Paris,fca4d729491468ed90cdd7a8d8a600b4,Toqueville - Cardinet,48.88490187110713,2.3109393194317818,33,0,32,0.3333333333333333,0.0,6.9818181818181815,Vide chronique : réapprovisionner,vide,17,66.7,2026-10-21 12:35:16
+velo,Toulouse,0d6e5979f6ad614551b0bd207461975b,ANCELY TRAMWAY,43.619301,1.396986,20,0,19,0.3333333333333333,0.0,23.04,Vide chronique : réapprovisionner,vide,10,66.7,2026-10-21 12:35:16
+vlille,Lille,d95631abe99703b59d7b1dccca02d6cb,Quai du Wault,50.63671,3.0547730000000004,18,1,17,0.3333333333333333,0.0,12.799999999999999,Vide chronique : réapprovisionner,,8,66.7,2026-10-21 12:35:16
+velib,Paris,5a06c91f1c491c0335750a3bd2cb79e8,Marché Saint-Germain,48.8516562585528,2.335500307381153,21,18,0,0.0,0.3333333333333333,5.485714285714285,Pleine chronique : délester,pleine,-8,66.7,2026-10-21 12:35:16
+velib,Paris,d3dc2fee037a699450ab092e9bee82c0,Ledru-Rollin - Charonne,48.85345855607243,2.3772463581947094,32,28,1,0.0,0.3333333333333333,7.199999999999999,Pleine chronique : délester,,-12,66.7,2026-10-21 12:35:16
+vlille,Lille,53c466cc5fc985f33ee6cc11534638e8,Bd Victor Hugo,50.620304,3.0554710000000003,18,1,17,0.3333333333333333,0.0,6.3999999999999995,Vide chronique : réapprovisionner,,8,66.7,2026-10-21 12:35:16
+velib,Paris,51a58938b42b876697c88470bad283af,Place Denfert-Rochereau,48.843252536286684,2.245987951755524,20,0,20,0.3333333333333333,0.0,5.76,Vide chronique : réapprovisionner,vide,10,66.7,2026-10-21 12:35:16
+velo,Toulouse,b58b6a1301e1d577031056dd23fb8787,PLACE DU PEYROU,43.607369,1.439453,20,19,0,0.0,0.3333333333333333,5.76,Pleine chronique : délester,pleine,-9,66.7,2026-10-21 12:35:16
+velib,Paris,77b337a27e18263ea6c62df64af7c441,René Coty - Place Denfert-Rochereau,48.833056477316,2.3329411447048005,36,1,34,0.3333333333333333,0.0,6.3999999999999995,Vide chronique : réapprovisionner,,17,66.7,2026-10-21 12:35:16
+velov,Lyon,0802bbd95105da1e7f67c0c663277970,SAINTE-IRÉNÉE,45.754978,4.812427,20,0,20,0.3333333333333333,0.0,11.52,Vide chronique : réapprovisionner,vide,10,66.7,2026-10-21 12:35:16
+v3-bordeaux,Bordeaux,c9017fa2848fb32b2bb6bcac7e07ffb4,Allee de Serr Abadie,44.84377,-0.5575099999999998,20,2,18,0.3333333333333333,0.0,11.52,Vide chronique : réapprovisionner,,8,66.7,2026-10-21 12:35:16
+velib,Paris,cfe8facd91fe4fcbc173fe6b051e0524,Roquette - Thiéré,48.855079305795066,2.3733686318721463,23,23,0,0.0,0.3333333333333333,5.0086956521739125,Pleine chronique : délester,pleine,-12,66.7,2026-10-21 12:35:16
+velo,Toulouse,566af7b449e96f30cd1641a1ae94c686,EBELOT - PUJIBET,43.638044,1.4577159999999998,13,12,0,0.0,0.3333333333333333,17.72307692307692,Pleine chronique : délester,pleine,-6,66.7,2026-10-21 12:35:16
+velo,Toulouse,b25c736533cc74fbcb330542e270038d,MATABIAU GARE - BONREPOS,43.611052,1.452593,40,0,38,0.3333333333333333,0.0,11.52,Vide chronique : réapprovisionner,vide,20,66.7,2026-10-21 12:35:16
+velov,Lyon,b6a618705efe5a3a52c3bb41e604515b,PLACE DE TRION,45.757916,4.81317,16,0,15,0.3333333333333333,0.0,14.399999999999999,Vide chronique : réapprovisionner,vide,8,66.7,2026-10-21 12:35:16
+velov,Lyon,d7a6d0fff8e64b5ee7fffc7e3adf0fea,PLACE ADRIEN GODIEN,45.77876700000001,4.841109,30,0,30,0.3333333333333333,0.0,7.679999999999999,Vide chronique : réapprovisionner,vide,15,66.7,2026-10-21 12:35:16
+vlille,Lille,05693e3cc20a815cf081158ddf0d6d00,Saint Maur,50.651638,3.0816249999999994,24,1,23,0.3333333333333333,0.0,14.399999999999999,Vide chronique : réapprovisionner,,11,66.7,2026-10-21 12:35:16
+velib,Paris,32dd10305074ec74c0e7ce64b5fd652a,Jardin de l'Hospice Debrousse,48.861451061938,2.4056860059499994,23,1,22,0.3333333333333333,0.0,5.0086956521739125,Vide chronique : réapprovisionner,,11,66.7,2026-10-21 12:35:16
+velib,Paris,a7478adb05e486927575b7cbd32a4d3c,Bréa - Raspail,48.842738478258006,2.3297942217634,24,2,22,0.3333333333333333,0.0,14.399999999999999,Vide chronique : réapprovisionner,,10,66.7,2026-10-21 12:35:16
+velib,Paris,55a74d7a373b87349702949cca7ba8ab,Panthéon - Valette,48.847020571652,2.3464982619670995,51,51,0,0.0,0.3333333333333333,18.070588235294117,Pleine chronique : délester,pleine,-26,66.7,2026-10-21 12:35:16
+velib,Paris,daa140e1df4fd298c825b3071d34df26,Fille du Calvaire - Turenne,48.86210505412563,2.3649600148200993,29,27,0,0.0,0.3333333333333333,7.9448275862068956,Pleine chronique : délester,pleine,-13,66.7,2026-10-21 12:35:16
+velib,Paris,f5441fb978906cf4e4e16d3c9b9e52b0,Président Wilson - Baudin,48.898268871036755,2.2849336266517644,28,24,0,0.0,0.3333333333333333,12.342857142857142,Pleine chronique : délester,pleine,-10,66.7,2026-10-21 12:35:16
+velib,Paris,3fe133b3337b2a5907425b8e243a8e59,Amaury Duval - Gabriel Péri,48.81718759671674,2.323841750621796,36,0,36,0.3333333333333333,0.0,9.6,Vide chronique : réapprovisionner,vide,18,66.7,2026-10-21 12:35:16
+velov,Lyon,cf6db80b56cd00c3acd4fcf33ed4fd2a,TOTEM,45.763652,4.873158,16,3,11,0.3333333333333333,0.0,50.4,Vide chronique : réapprovisionner,,5,66.7,2026-10-21 12:35:16
+velib,Paris,08c04311d5c7b860884983dce4cbe2bc,Mairie,48.879143041620004,2.4163350908311005,20,2,17,0.3333333333333333,0.0,11.52,Vide chronique : réapprovisionner,,8,66.7,2026-10-21 12:35:16
+velib,Paris,3a05079f559fff0b86fa2bf0921a2f11,Louis Lumière - Porte de Bagnolet,48.864311359999995,2.4105210229754,20,0,20,0.3333333333333333,0.0,5.76,Vide chronique : réapprovisionner,vide,10,66.7,2026-10-21 12:35:16
+velib,Paris,4c195e576b892f6d3350a36e59a52ff3,Dunkerque - Rocroy,48.880726,2.351464,24,0,24,0.3333333333333333,0.0,9.6,Vide chronique : réapprovisionner,vide,12,66.7,2026-10-21 12:35:16
+velib,Paris,95a2879c64daca7926cc31f06b5e4189,Michelet - Dr Bauer,48.906125424193995,2.3440374449846,32,2,29,0.3333333333333333,0.0,10.799999999999999,Vide chronique : réapprovisionner,,14,66.7,2026-10-21 12:35:16
+velib,Paris,d3f6c21e324d23f9ac91ab4ce91375d9,Rivoli - Musée du Louvre,48.863646368519,2.3340958356857,24,21,3,0.0,0.3333333333333333,19.2,Pleine chronique : délester,,-9,66.7,2026-10-21 12:35:16
+velib,Paris,31a0e7e0c55261923e2025c455d49a41,Place Pasdeloup,48.86265421563099,2.3670325062843998,21,21,0,0.0,0.3333333333333333,5.485714285714285,Pleine chronique : délester,pleine,-11,66.7,2026-10-21 12:35:16
+velib,Paris,4c9385d2c3e2fa4da9a58c2cd3e689f1,Centre Georges Pompidou,48.861419000000005,2.3525810000000003,26,25,0,0.0,0.3333333333333333,17.72307692307692,Pleine chronique : délester,pleine,-12,66.7,2026-10-21 12:35:16
+velib,Paris,5fe45802ea2c9fbcb50f1dfbae649682,Rampal - Belleville,48.873114661405,2.3798409114805,20,1,18,0.3333333333333333,0.0,11.52,Vide chronique : réapprovisionner,,9,66.7,2026-10-21 12:35:16
+velib,Paris,6fa0041144d81e5767dfcfe14827a9e5,Decrès - Alésia,48.832200060759,2.3139070151575,30,0,30,0.3333333333333333,0.0,15.359999999999998,Vide chronique : réapprovisionner,vide,15,66.7,2026-10-21 12:35:16
+velov,Lyon,c4d1bda664857f1ac498b82f0d4bcbfa,HACHETTE,45.752907,4.863923,15,0,15,0.3333333333333333,0.0,15.359999999999998,Vide chronique : réapprovisionner,vide,8,66.7,2026-10-21 12:35:16
+velov,Lyon,711205c78d765fc546a853c98442f03a,BOULEVARD DES BELGES,45.773304,4.8520010000000005,15,1,12,0.3333333333333333,0.0,23.04,Vide chronique : réapprovisionner,,7,66.7,2026-10-21 12:35:16
+velib,Paris,04d896767d79f9d0b9d16a0f3d33eb33,Francoeur - Marcadet,48.89104123261663,2.340014585442034,20,1,19,0.3333333333333333,0.0,5.76,Vide chronique : réapprovisionner,,9,66.7,2026-10-21 12:35:16
+velib,Paris,2fd1582673f2cde85fbf37c87099f528,Place Centrale,48.78740167690531,2.2278830409049992,22,2,20,0.3333333333333333,0.0,10.47272727272727,Vide chronique : réapprovisionner,,9,66.7,2026-10-21 12:35:16
+velib,Paris,670bf978de4b76803dee6983a7042953,Danielle Casanova - Opéra,48.867643242297,2.3333894088864002,20,18,1,0.0,0.3333333333333333,5.76,Pleine chronique : délester,,-8,66.7,2026-10-21 12:35:16
+velib,Paris,ba65681ee1a650bfef62a78064308564,Place Charles Digeon,48.84354203133597,2.418427169322968,32,0,32,0.3333333333333333,0.0,7.199999999999999,Vide chronique : réapprovisionner,vide,16,66.7,2026-10-21 12:35:16
+velo,Toulouse,580e5399822da2b3434a0d6e4e2065da,NICOL - VASSEUR,43.63343700000001,1.4698910000000003,13,0,12,0.3333333333333333,0.0,17.72307692307692,Vide chronique : réapprovisionner,vide,7,66.7,2026-10-21 12:35:16
+velo,Toulouse,8bb1ee0295995c8752922cdfc6bfd0f5,BALMA GRAMONT MÉTRO,43.628659,1.482629,18,17,0,0.0,0.3333333333333333,6.3999999999999995,Pleine chronique : délester,pleine,-8,66.7,2026-10-21 12:35:16
+velov,Lyon,629aeee1a2bcfaa5278e4b5f53f9ba28,DAUPHINÉ / SAINT-MAXIMIN,45.750002,4.864587,30,1,27,0.3333333333333333,0.0,11.52,Vide chronique : réapprovisionner,,14,66.7,2026-10-21 12:35:16
+vlille,Lille,8c9a9becd5d9351e0177cba52decf25a,Nationale Rue du Port,50.630835999999995,3.0477780000000005,24,1,23,0.3333333333333333,0.0,9.6,Vide chronique : réapprovisionner,,11,66.7,2026-10-21 12:35:16
+velib,Paris,26cddaf7c8a7b85d5dbd6eeda7437227,Goutte d'or - Barbès,48.885124323627,2.3496962338685994,20,0,18,0.3333333333333333,0.0,5.76,Vide chronique : réapprovisionner,vide,10,66.7,2026-10-21 12:35:16
+velib,Paris,78b0c1c2a9b18f24ef024257370b66be,Legendre - Dulong,48.885325169402904,2.316423766314984,23,1,21,0.3333333333333333,0.0,5.0086956521739125,Vide chronique : réapprovisionner,,11,66.7,2026-10-21 12:35:16
+velib,Paris,abcd872dc070f17262126b1d885ba600,Geoffroy - Marie,48.873781940593325,2.3445138763378925,20,16,1,0.0,0.3333333333333333,17.279999999999998,Pleine chronique : délester,,-6,66.7,2026-10-21 12:35:16
+velo,Toulouse,3f309f3892133f5d460e8e949b403c9b,PLACE JOB,43.616944999999994,1.408383,18,0,17,0.3333333333333333,0.0,19.2,Vide chronique : réapprovisionner,vide,9,66.7,2026-10-21 12:35:16
+vlille,Lille,bf5f32c78fa92ceae58f4c5c4714b796,Theatre Sebastopol,50.629044,3.0582880000000006,32,1,30,0.3333333333333333,0.0,7.199999999999999,Vide chronique : réapprovisionner,,15,66.7,2026-10-21 12:35:16
+velib,Paris,21c672bac25b73d923af22282f5f7919,Dareau - Broussais,48.8307758,2.3361804,24,0,23,0.3333333333333333,0.0,4.8,Vide chronique : réapprovisionner,vide,12,65.3,2026-10-21 12:35:16
+vlille,Lille,1abc8da7e8f755bff0a4fd051a277fed,Esplanade,50.6449,3.050645,24,0,24,0.3333333333333333,0.0,4.8,Vide chronique : réapprovisionner,vide,12,65.3,2026-10-21 12:35:16
+velib,Paris,10b647d86c8bacb0eaed130754a54b83,M.- A. Lagroua Weill-Hallé -  F. Dolto,48.828595283857425,2.3802206062661075,74,72,1,0.0,0.3333333333333333,4.67027027027027,Pleine chronique : délester,,-35,64.5,2026-10-21 12:35:16
+velib,Paris,522c47b8d0ec09ad47516c94b4b3af99,Porte d'Ivry,48.821768747596,2.3688706755638,50,2,46,0.3333333333333333,0.0,4.608,Vide chronique : réapprovisionner,,23,64.1,2026-10-21 12:35:16
+velib,Paris,ed5f3cc959f86035215f4da93d21b93e,Belleville - Couronnes,48.868831082877,2.3809862136841,50,0,50,0.3333333333333333,0.0,4.608,Vide chronique : réapprovisionner,vide,25,64.1,2026-10-21 12:35:16
+velib,Paris,5e0300976302386725fcf174d74af436,Pau Casals - Neuve Tolbiac,48.8311602,2.3774395,78,77,1,0.0,0.3333333333333333,4.43076923076923,Pleine chronique : délester,,-38,62.9,2026-10-21 12:35:16
+velo,Toulouse,02b7fc52417067dfc0675007b7488415,BD DES MINIMES - PASSERELLE,43.615273,1.442937,27,0,26,0.3333333333333333,0.0,4.266666666666667,Vide chronique : réapprovisionner,vide,14,61.8,2026-10-21 12:35:16
+velib,Paris,d57ebdccece8728e9eadba78c16c3602,Marcelin Berthelot,48.841547305880106,2.233161628246308,27,1,26,0.3333333333333333,0.0,4.266666666666667,Vide chronique : réapprovisionner,,13,61.8,2026-10-21 12:35:16
+velib,Paris,7c58b341c5c0844331cdc2a812b666c8,Roland Garros - Jean Bouin,48.809460857173,2.2853198638301,28,1,26,0.3333333333333333,0.0,4.114285714285714,Vide chronique : réapprovisionner,,13,60.8,2026-10-21 12:35:16
+velib,Paris,9b500b459bb4c0aba959a354251c0cf3,Quai Panhard et Levassor,48.828374828097,2.3842737458056003,57,55,2,0.0,0.3333333333333333,4.042105263157894,Pleine chronique : délester,,-27,60.3,2026-10-21 12:35:16
+velib,Paris,cada83d656ebe4fdb26027abbdd9b422,Gambetta - Père Lachaise,48.864295696165875,2.398228667282044,29,1,28,0.3333333333333333,0.0,3.9724137931034478,Vide chronique : réapprovisionner,,14,59.8,2026-10-21 12:35:16
+velib,Paris,330a64235b680e966b0d2fba023bc75d,Bastille - Biscornet,48.851355779579,2.369220033288,62,59,2,0.0,0.3333333333333333,3.7161290322580642,Pleine chronique : délester,,-28,58.1,2026-10-21 12:35:16
+velib,Paris,e37ec2487a39ef09a854b434df76a82c,Pereire - Saussure,48.888229075478,2.3101296275854,32,0,32,0.3333333333333333,0.0,3.5999999999999996,Vide chronique : réapprovisionner,vide,16,57.3,2026-10-21 12:35:16
+velib,Paris,e911d07b60f6a50248e5db3bb3e23668,Rossini - Laffitte,48.87334627510507,2.3379808677016745,33,28,1,0.0,0.3333333333333333,3.4909090909090907,Pleine chronique : délester,,-12,56.6,2026-10-21 12:35:16
+velib,Paris,393d9ce85433bb87d91759030a46beda,Francoeur - Caulaincourt,48.8899944409612,2.342529706656933,34,0,32,0.3333333333333333,0.0,3.3882352941176466,Vide chronique : réapprovisionner,vide,17,55.9,2026-10-21 12:35:16
+velib,Paris,c73cd994866ac7f654e63bd1869b05e9,Ferrus - Saint-Jacques,48.83138780000001,2.3408563,34,0,32,0.3333333333333333,0.0,3.3882352941176466,Vide chronique : réapprovisionner,vide,17,55.9,2026-10-21 12:35:16
+velib,Paris,d1ba2fc1574bdec823864a3373312d04,Dunkerque - Maubeuge,48.880432768947,2.3528900992907,35,1,33,0.3333333333333333,0.0,3.291428571428571,Vide chronique : réapprovisionner,,17,55.3,2026-10-21 12:35:16
+velib,Paris,fe296c930942ae6a13e8ad2e6ea013de,Chevaleret - Tolbiac,48.82941,2.3759340000000004,35,35,0,0.0,0.3333333333333333,3.291428571428571,Pleine chronique : délester,pleine,-18,55.3,2026-10-21 12:35:16
+velib,Paris,fcf9179f09d7ca7526036d1b7490ade9,Charonne - Alexandre Dumas,48.856077415056,2.3948693275452,35,1,33,0.3333333333333333,0.0,3.291428571428571,Vide chronique : réapprovisionner,,17,55.3,2026-10-21 12:35:16
+velib,Paris,1067e1bd44428676a13371f6b7ab121e,Artois - Berri,48.87393521240801,2.306425832212,37,36,0,0.0,0.3333333333333333,3.1135135135135132,Pleine chronique : délester,pleine,-18,54.1,2026-10-21 12:35:16
+velib,Paris,6ca396381dc2e5d8d179d85ae3555abd,Indre - Prairies,48.86254398506782,2.403290458023548,38,1,37,0.3333333333333333,0.0,3.0315789473684207,Vide chronique : réapprovisionner,,18,53.5,2026-10-21 12:35:16
+velib,Paris,a5fb3ba2ae84664e8ba0746dd6d9def2,Emile Blemont - Poteau,48.8943782,2.3415122,39,0,38,0.3333333333333333,0.0,2.9538461538461536,Vide chronique : réapprovisionner,vide,20,53.0,2026-10-21 12:35:16
+velib,Paris,d6748cbdc75688e92afc35ecbcb5fc8e,Marcadet - Ramey,48.890875,2.3449019,39,0,36,0.3333333333333333,0.0,2.9538461538461536,Vide chronique : réapprovisionner,vide,20,53.0,2026-10-21 12:35:16
+velib,Paris,80e7409eb7fe7c76c43c8a4d73d4cb73,Parmentier - Hôpital Saint-Louis,48.871379874257,2.3698963836666995,43,0,43,0.3333333333333333,0.0,2.67906976744186,Vide chronique : réapprovisionner,vide,22,51.2,2026-10-21 12:35:16
+velib,Paris,7f19f458f67464338660a1e2ade3c48c,Cimetière de Montmartre,48.886472466142,2.3328901827335,43,1,42,0.3333333333333333,0.0,2.67906976744186,Vide chronique : réapprovisionner,,21,51.2,2026-10-21 12:35:16
+velib,Paris,56c2da4066fd35120072927ac72d88b2,Place Valhubert,48.844182577315,2.3640366643667003,51,48,1,0.0,0.3333333333333333,2.2588235294117647,Pleine chronique : délester,,-23,48.4,2026-10-21 12:35:16
+velib,Paris,cd5327b63663bffded353199712296fa,Ruisseau - Ordener,48.89299462568024,2.340144887566567,53,0,49,0.3333333333333333,0.0,2.1735849056603773,Vide chronique : réapprovisionner,vide,27,47.8,2026-10-21 12:35:16
+velib,Paris,f2c38d4dc146bdbc7ce0b998d16f85b3,Picpus - Louis Braille,48.839988788912,2.4005256685520995,58,1,57,0.3333333333333333,0.0,1.9862068965517239,Vide chronique : réapprovisionner,,28,46.6,2026-10-21 12:35:16
+velib,Paris,a87ab4a2181ddd14a7ef18b8c51dd088,Hôpital Européen Georges Pompidou,48.837695319163,2.2753742337227005,78,78,0,0.0,0.3333333333333333,1.4769230769230768,Pleine chronique : délester,pleine,-39,43.2,2026-10-21 12:35:16
+bicloo,Nantes,d48c0d4cb7eae8bc9c0e8bd41970245c,SÉBILLEAU,47.206758,-1.533118,16,0,14,0.16666666666666666,0.0,14.399999999999999,,vide,8,33.3,2026-10-21 12:35:16
+velov,Lyon,cd93dd6423cd907ed5b044198ae41637,CARMÉLITES,45.770006,4.829273999999999,16,0,16,0.16666666666666666,0.0,7.199999999999999,,vide,8,33.3,2026-10-21 12:35:16
+velov,Lyon,7e332e78d7bea489b1965f5383c72f5f,GARE DE VILLEURBANNE,45.755767999999996,4.891542,22,0,20,0.16666666666666666,0.0,5.236363636363635,,vide,11,33.3,2026-10-21 12:35:16
+velov,Lyon,0c8ff71aea7ce4908fcd9e18f09874fe,SALENGRO / DESCARTES,45.776239,4.871634,15,0,15,0.16666666666666666,0.0,15.359999999999998,,vide,8,33.3,2026-10-21 12:35:16
+velov,Lyon,3f06a127b1e8fda3ca3ff3199d741acb,ZOLA / FRANCE,45.767957,4.887232,16,0,16,0.16666666666666666,0.0,21.599999999999998,,vide,8,33.3,2026-10-21 12:35:16
+velov,Lyon,9c9cb529772491bee5f973a89f7d2db9,LYON 03 - PLACE GABRIEL PÉRI,45.755023,4.843936,24,0,23,0.16666666666666666,0.0,9.6,,vide,12,33.3,2026-10-21 12:35:16
+velov,Lyon,182591b58d927f7d0966d932d3634c1a,LYCÉE MARIE CURIE,45.761531999999995,4.895763,15,0,15,0.16666666666666666,0.0,7.679999999999999,,vide,8,33.3,2026-10-21 12:35:16
+velov,Lyon,ccb2220d85e611a21f121232222fc11a,DUPEUBLE / 8 MAI 1945,45.77608800000001,4.892274999999999,15,0,14,0.16666666666666666,0.0,7.679999999999999,,vide,8,33.3,2026-10-21 12:35:16
+velov,Lyon,d1eba037dd5c51da2e17c2e53b737eb8,PLACE MENDÈS FRANCE,45.740052,4.85941,20,0,20,0.16666666666666666,0.0,17.279999999999998,,vide,10,33.3,2026-10-21 12:35:16
+velov,Lyon,6e7ec24bc75e95d3933a866d1545b96c,L'HOMME DE LA ROCHE,45.76657599999999,4.820214,21,0,20,0.16666666666666666,0.0,10.97142857142857,,vide,11,33.3,2026-10-21 12:35:16
+bicloo,Nantes,179176998ccdcad278fae5c822477560,MELLINET,47.211501,-1.5771750000000002,15,0,15,0.16666666666666666,0.0,7.679999999999999,,vide,8,33.3,2026-10-21 12:35:16
+velov,Lyon,0da0c384434f167f94fd4f54744b99c4,JEAN JAURÈS,45.737503,4.837484,16,16,0,0.0,0.16666666666666666,7.199999999999999,,pleine,-8,33.3,2026-10-21 12:35:16
+vlille,Lille,ae59ae33c61cb81f990d43e37c052e65,Station Provisoire 1,50.647019,3.0577779999999994,20,0,20,0.16666666666666666,0.0,17.279999999999998,,vide,10,33.3,2026-10-21 12:35:16
