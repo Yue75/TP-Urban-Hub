@@ -48,8 +48,10 @@ TABLES: dict[str, list[Table]] = {
     ],
     "Partie 4 – Analyse croisée": [
         Table("meteo_horaire_ville", "Open-Meteo : météo récente par ville et par heure (Partie 1)"),
-        Table("croise_horaire_ville", "Fusion ville × heure : météo + polluants + vélos (python -m croise.fusion)"),
-        Table("croise_journalier_ville", "Fusion ville × jour (python -m croise.fusion)"),
+        Table("pollution_horaire_ville", "OpenAQ : concentration horaire par ville et polluant (Partie 3)"),
+        Table("network_timeseries", "CityBikes : activité des réseaux à chaque relevé (Partie 2)"),
+        Table("croise_horaire_ville", "Sortie du pipeline python -m croise.fusion (la page recalcule la fusion)",
+              optional=True),
     ],
 }
 
@@ -104,3 +106,23 @@ def require(*names: str) -> dict[str, pd.DataFrame]:
         st.warning(f"Données manquantes dans `{DATA_DIR.name}/` : "
                    + ", ".join(f"`{m}`" for m in missing), icon=":material/folder_off:")
     return found
+
+
+FUSION_INPUTS = ["meteo_horaire_ville", "pollution_horaire_ville", "network_timeseries"]
+
+
+@st.cache_data(show_spinner="Fusion des données…")
+def _fused(paths: tuple[str, ...], mtimes: tuple[float, ...]) -> tuple[pd.DataFrame, pd.DataFrame]:
+    from croise import fusion
+    meteo, pol, ts = (local_lake.read(Path(p)) for p in paths)
+    hourly = fusion.build_hourly(fusion.weather_hourly(meteo), fusion.pollution_hourly(pol), fusion.bikes_hourly(ts))
+    return hourly, fusion.build_daily(hourly)
+
+
+def fused() -> tuple[pd.DataFrame, pd.DataFrame] | None:
+    """Tables croisees (horaire, journaliere) recalculees avec le pipeline de la Partie 4 des que
+    une source change : il suffit de deposer un nouvel export dans data/."""
+    paths = [find(n) for n in FUSION_INPUTS]
+    if any(p is None for p in paths):
+        return None
+    return _fused(tuple(map(str, paths)), tuple(local_lake.mtime(p) for p in paths))
