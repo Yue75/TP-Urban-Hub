@@ -31,6 +31,8 @@ FRANCE = INK                                   # agregat national : encre, trait
 
 # Rampe sequentielle (une teinte, clair -> fonce)
 SEQUENTIAL = ["#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#184f95", "#0d366b"]
+# Variante pour les cartes : demarre au pas 250 pour que la valeur 0 reste visible sur le fond
+SEQUENTIAL_MAP = ["#86b6ef", "#5598e7", "#2a78d6", "#1c5cab", "#104281", "#0d366b"]
 
 # Statuts (reserves : jamais utilises comme couleur de serie, toujours avec un libelle)
 STATUS = {"good": "#0ca30c", "warning": "#fab219", "serious": "#ec835a", "critical": "#d03b3b"}
