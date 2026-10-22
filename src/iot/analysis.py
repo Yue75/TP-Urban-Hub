@@ -32,6 +32,7 @@ Z_THRESHOLD = 3.5           # seuil du z-score robuste pour les anomalies
 MAX_GAP_H = 3               # ecart max (heures) entre deux heures anormales d'un meme episode
 MIN_EPISODE_H = 3           # duree minimale d'un episode
 MIN_SENSORS = 3             # nb minimal de capteurs par heure pour detecter une anomalie
+MIN_HOURS_STATION = 72     # une station doit avoir au moins 3 jours de mesures pour figurer au classement
 
 
 # ------------------------------------------------------------------ preparation
@@ -61,6 +62,7 @@ def q1_ranking(hs: pd.DataFrame) -> pd.DataFrame:
     g = hs.groupby(["pollutant", "city", "location_name", "latitude", "longitude"], observed=True)
     out = g.agg(mean=("value", "mean"), p95=("value", lambda s: s.quantile(0.95)),
                 n_hours=("value", "size")).reset_index()
+    out = out[out["n_hours"] >= MIN_HOURS_STATION]
     return out.sort_values(["pollutant", "mean"], ascending=[True, False])
 
 

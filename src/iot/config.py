@@ -59,6 +59,7 @@ REPORTS_DIR = Path(os.getenv("IOT_REPORTS_DIR", ROOT / "outputs" / "partie3"))
 # Parametres du service Docker (iot.run)
 BACKFILL_DAYS = int(os.getenv("IOT_BACKFILL_DAYS", "30"))
 INTERVAL_MIN = int(os.getenv("IOT_INTERVAL_MIN", "15"))
+MAX_AGE_HOURS = int(os.getenv("IOT_MAX_AGE_HOURS", "48"))   # ignore les valeurs plus anciennes (capteurs muets)
 
 
 def check_api_key() -> None:
