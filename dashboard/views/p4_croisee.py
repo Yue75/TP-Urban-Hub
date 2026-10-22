@@ -12,4 +12,5 @@ ui.header(
         "Existe-t-il des périodes où mobilité, pollution et météo interagissent fortement ?",
     ],
 )
+ui.data_status("Partie 4 – Analyse croisée")
 st.info("Page en construction.", icon=":material/construction:")

@@ -1,5 +1,3 @@
-import sys
-
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
@@ -10,8 +8,7 @@ import theme
 import ui
 from ui import fr, pct
 
-sys.path.insert(0, str(lake.ROOT / "src"))
-from iot import analysis as A  # noqa: E402  (methodes de la partie 3, reutilisees telles quelles)
+from iot import analysis as A  # methodes de la partie 3 (src/ ajoute au chemin par lake), reutilisees telles quelles
 
 ui.header(
     "Partie 3 – Flux IoT : pollution urbaine",
