@@ -31,6 +31,15 @@ LABELS = {"pm25": "PM2.5", "pm10": "PM10", "no2": "NO₂", "o3": "O₃", "co": "
 MAP_STYLE = "carto-positron"
 
 
+def au(p: str) -> str:
+    """Article contracte : « au NO₂ » mais « à l'O₃ »."""
+    return f"à l'{LABELS[p]}" if p == "o3" else f"au {LABELS[p]}"
+
+
+def le(p: str) -> str:
+    return f"l'{LABELS[p]}" if p == "o3" else f"le {LABELS[p]}"
+
+
 @st.cache_data(show_spinner="Calcul des indicateurs…")
 def who_table(g: pd.DataFrame) -> pd.DataFrame:
     return A.q3_who(g)
@@ -91,7 +100,7 @@ with q1:
         city = st.selectbox("Ville (carte)", cities, key="q1_city")
         rc = r[r["city"] == city]
         if rc.empty:
-            st.info(f"Aucune station ne mesure le {LABELS[pol]} à {city}.")
+            st.info(f"Aucune station ne mesure {le(pol)} à {city}.")
         else:
             fig = px.scatter_map(rc, lat="latitude", lon="longitude", color="mean", size="p95", size_max=22,
                                  color_continuous_scale=theme.SEQUENTIAL_MAP, hover_name="location_name",
@@ -109,7 +118,7 @@ with q1:
     txt = ""
     if len(top):
         s = top.iloc[-1]
-        txt += (f"- Station la plus exposée au **{LABELS[pol]}** : **{s['location_name']}** ({s['city']}), "
+        txt += (f"- Station la plus exposée {au(pol)} : **{s['location_name']}** ({s['city']}), "
                 f"{fr(s['mean'], 1)} µg/m³ en moyenne (95e centile {fr(s['p95'], 1)}).\n")
         names = top.sort_values("mean", ascending=False).head(5)["location_name"]
         road = names[names.str.contains(r"Auto|Périph|périph|RN\d|Bld|Boulevard|Avenue|AVENUES|Rue", regex=True)]
@@ -120,7 +129,7 @@ with q1:
             txt += (f"- Attention : cette station n'a mesuré que {s['n_hours']} heures sur la période ; "
                     "le curseur permet de ne garder que les stations mesurées plus longtemps.\n")
     if len(city_mean):
-        txt += (f"- Ville la plus exposée au {LABELS[pol]} (moyenne de ses capteurs) : **{city_mean.index[0]}** "
+        txt += (f"- Ville la plus exposée {au(pol)} (moyenne de ses capteurs) : **{city_mean.index[0]}** "
                 f"({fr(city_mean.iloc[0], 1)} µg/m³), la moins exposée : {city_mean.index[-1]} "
                 f"({fr(city_mean.iloc[-1], 1)} µg/m³).")
     ui.reading(txt)
