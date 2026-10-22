@@ -95,13 +95,14 @@ def init_last_seen(store: Store) -> dict[int, pd.Timestamp]:
 
 def poll_once(client, sensors: pd.DataFrame, last_seen: dict) -> pd.DataFrame:
     wanted = set(sensors["sensor_id"])
+    min_ts = pd.Timestamp.now(tz="UTC") - pd.Timedelta(hours=config.MAX_AGE_HOURS)
     rows = []
     for loc_id in sensors["location_id"].unique():
         data = client.get(f"/locations/{loc_id}/latest", {"limit": 1000})
         for r in data.get("results", []):
             sid = r.get("sensorsId")
             ts = pd.to_datetime((r.get("datetime") or {}).get("utc"), utc=True, errors="coerce")
-            if sid not in wanted or pd.isna(ts):
+            if sid not in wanted or pd.isna(ts) or ts < min_ts:
                 continue
             if sid in last_seen and ts <= last_seen[sid]:
                 continue  # deja ingere

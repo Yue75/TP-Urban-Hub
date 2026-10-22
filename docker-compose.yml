@@ -78,12 +78,40 @@ services:
     volumes:
       - ./src:/app/src
       - ./outputs:/app/outputs
+  iot_collector:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: urbanhub:latest
+    container_name: urbanhub_iot
+    command: python -m iot.run
+    environment:
+      <<: *urbanhub-env
+      IOT_STORE: s3
+      OPENAQ_API_KEY: ${OPENAQ_API_KEY}
+      IOT_BACKFILL_DAYS: "30"
+      IOT_INTERVAL_MIN: "15"
     depends_on:
       minio:
         condition: service_healthy
     restart: unless-stopped
     profiles: ["iot"]
 
+
+  iot_analysis:
+    image: urbanhub:latest
+    container_name: urbanhub_iot_analysis
+    command: python -m iot.analysis
+    environment:
+      <<: *urbanhub-env
+      IOT_STORE: s3
+    volumes:
+      - ./outputs:/app/outputs
+      - ./src:/app/src
+    depends_on:
+      minio:
+        condition: service_healthy
+    profiles: ["batch"]
   # Partie 1 (météo NOAA) : JupyterLab + Spark, écrit dans le même MinIO (bucket urbanhub)
   #   docker compose --profile meteo up -d jupyter   ->  http://localhost:8888
   jupyter:

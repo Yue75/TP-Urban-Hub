@@ -90,6 +90,12 @@ class Store:
                 return False
         return (self.root / key).exists()
 
+    def delete(self, key: str) -> None:
+        if self.mode == "s3":
+            self._s3.delete_object(Bucket=config.BUCKET, Key=key)
+        else:
+            (self.root / key).unlink()
+
     def delete_prefix(self, prefix: str) -> None:
         for key in self.list(prefix):
             if self.mode == "s3":
