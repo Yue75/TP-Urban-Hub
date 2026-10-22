@@ -68,17 +68,6 @@ services:
   # Partie 3 : ingestion OpenAQ régulière (flux IoT). Nécessite OPENAQ_API_KEY dans .env
   #   docker compose --profile iot up -d iot_collector
   iot_collector:
-    image: urbanhub:latest
-    container_name: urbanhub_iot
-    command: python -m iot.run
-    environment: *urbanhub-env
-    env_file:
-      - path: .env
-        required: false
-    volumes:
-      - ./src:/app/src
-      - ./outputs:/app/outputs
-  iot_collector:
     build:
       context: .
       dockerfile: docker/Dockerfile
@@ -91,6 +80,12 @@ services:
       OPENAQ_API_KEY: ${OPENAQ_API_KEY}
       IOT_BACKFILL_DAYS: "30"
       IOT_INTERVAL_MIN: "15"
+    env_file:
+      - path: .env
+        required: false
+    volumes:
+      - ./src:/app/src
+      - ./outputs:/app/outputs
     depends_on:
       minio:
         condition: service_healthy
