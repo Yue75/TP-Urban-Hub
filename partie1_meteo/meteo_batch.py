@@ -14,7 +14,12 @@ import time
 import requests
 import pandas as pd
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from minio import Minio
+try:
+    from minio import Minio
+except ImportError:                      # conteneur recree : on reinstalle la librairie
+    import subprocess, sys
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "minio"], check=True)
+    from minio import Minio
 
 ANNEES = range(2021, 2026)          # 5 dernieres annees completes
 BASE_URL = "https://noaa-global-hourly-pds.s3.amazonaws.com"
@@ -25,8 +30,13 @@ DOSSIER = "/home/jovyan/work/data/bronze/meteo"
 NB_TELECHARGEMENTS_PARALLELES = 16
 ENTETES = {"User-Agent": "UrbanHub-TP-etudiant/1.0 (projet pedagogique)"}
 
-client = Minio("minio:9000", access_key="minioadmin",
-               secret_key="minioadmin123", secure=False)
+# MinIO commun de l'equipe : memes variables que le reste du projet (voir .env)
+MINIO_ENDPOINT = os.getenv("MINIO_ENDPOINT", "http://minio:9000")
+BUCKET = os.getenv("MINIO_BUCKET", "urbanhub")
+client = Minio(MINIO_ENDPOINT.replace("http://", "").replace("https://", ""),
+               access_key=os.getenv("MINIO_ACCESS_KEY", "urbanhub"),
+               secret_key=os.getenv("MINIO_SECRET_KEY", "urbanhub123"),
+               secure=MINIO_ENDPOINT.startswith("https"))
 
 
 def get(url, timeout=180):
@@ -45,9 +55,9 @@ def get(url, timeout=180):
 
 
 def creer_buckets():
-    for bucket in ["bronze", "silver", "gold"]:
-        if not client.bucket_exists(bucket):
-            client.make_bucket(bucket)
+    # un seul bucket pour toute l'equipe : bronze/, silver/, gold/ sont des prefixes
+    if not client.bucket_exists(BUCKET):
+        client.make_bucket(BUCKET)
 
 
 def stations_par_code_07(annee):
@@ -81,7 +91,7 @@ def stations_france():
     os.makedirs(DOSSIER, exist_ok=True)
     chemin = f"{DOSSIER}/stations_france.csv"
     df.to_csv(chemin, index=False)
-    client.fput_object("bronze", "meteo/stations_france.csv", chemin)
+    client.fput_object(BUCKET, "bronze/meteo/stations_france.csv", chemin)
     return df
 
 
@@ -103,7 +113,7 @@ def telecharger(station_id, annee):
     os.makedirs(dossier, exist_ok=True)
     chemin = f"{dossier}/{station_id}.parquet"
     df.to_parquet(chemin, index=False)
-    client.fput_object("bronze", f"meteo/annee={annee}/{station_id}.parquet", chemin)
+    client.fput_object(BUCKET, f"bronze/meteo/annee={annee}/{station_id}.parquet", chemin)
     os.remove(chemin)                                # copie locale inutile
     return station_id, annee, len(df)
 

@@ -1,4 +1,4 @@
-# UrbanHub - Partie 2 : flux streaming mobilité urbaine (CityBikes)
+# UrbanHub : MinIO commun (bucket urbanhub) + Partie 1 météo (jupyter) + Partie 2 vélos (collector, spark)
 #   Python collecte -> MinIO stocke -> Spark transforme -> matplotlib montre
 x-urbanhub-env: &urbanhub-env
   MINIO_ENDPOINT: http://minio:9000
@@ -88,6 +88,22 @@ services:
       minio:
         condition: service_healthy
     profiles: ["batch"]
+  # Partie 1 (météo NOAA) : JupyterLab + Spark, écrit dans le même MinIO (bucket urbanhub)
+  #   docker compose --profile meteo up -d jupyter   ->  http://localhost:8888
+  jupyter:
+    image: quay.io/jupyter/pyspark-notebook:2024-05-27
+    container_name: urbanhub_jupyter
+    command: bash -c "pip install -q minio && start-notebook.py --IdentityProvider.token=''"
+    environment: *urbanhub-env
+    ports:
+      - "8888:8888"   # JupyterLab
+      - "4040:4040"   # Interface Spark
+    volumes:
+      - ./partie1_meteo:/home/jovyan/work/partie1_meteo
+    depends_on:
+      minio:
+        condition: service_healthy
+    profiles: ["meteo"]
 
 volumes:
   minio_data:
