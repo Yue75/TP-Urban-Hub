@@ -1,0 +1,60 @@
+# UrbanHub - Partie 2 : flux streaming mobilité urbaine (CityBikes)
+#   Python collecte -> MinIO stocke -> Spark transforme -> matplotlib montre
+x-urbanhub-env: &urbanhub-env
+  MINIO_ENDPOINT: http://minio:9000
+  MINIO_ACCESS_KEY: urbanhub
+  MINIO_SECRET_KEY: urbanhub123
+  MINIO_BUCKET: urbanhub
+  # Réseaux CityBikes des principales villes de France (id CityBikes)
+  CITYBIKES_NETWORKS: velib,velov,le-velo,velo,bicloo,velhop,velomagg,v3-bordeaux,vlille,le-velo-star
+  COLLECT_INTERVAL_SECONDS: "150"   # 2 min 30 s
+
+services:
+  minio:
+    # L'image officielle minio/minio n'est plus publiée sur Docker Hub : on utilise la version Bitnami
+    image: bitnamilegacy/minio:latest
+    container_name: urbanhub_minio
+    environment:
+      MINIO_ROOT_USER: urbanhub
+      MINIO_ROOT_PASSWORD: urbanhub123
+      MINIO_DEFAULT_BUCKETS: urbanhub
+    ports:
+      - "9100:9000"   # API S3
+      - "9101:9001"   # Console web : http://localhost:9101
+    volumes:
+      - minio_data:/bitnami/minio/data
+    healthcheck:
+      test: ["CMD", "curl", "-fs", "http://localhost:9000/minio/health/live"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    restart: unless-stopped
+
+  collector:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: urbanhub:latest
+    container_name: urbanhub_collector
+    command: python -m collector.collect_citybikes
+    environment: *urbanhub-env
+    depends_on:
+      minio:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # Service "à la demande" : docker compose run --rm spark python -m spark_jobs.pipeline
+  spark:
+    image: urbanhub:latest
+    container_name: urbanhub_spark
+    environment: *urbanhub-env
+    volumes:
+      - ./outputs:/app/outputs
+      - ./src:/app/src
+    depends_on:
+      minio:
+        condition: service_healthy
+    profiles: ["batch"]
+
+volumes:
+  minio_data:
