@@ -4,3 +4,6 @@ pyarrow
 boto3
 matplotlib
 python-dotenv
+minio
+# PySpark 3.5 = Hadoop 3.3.4 : doit rester aligné avec les jars S3A téléchargés dans docker/Dockerfile
+pyspark==3.5.3

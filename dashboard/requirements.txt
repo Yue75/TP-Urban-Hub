@@ -1,0 +1,6 @@
+# Dashboard UrbanHub (Streamlit) : independant de l'image Docker Spark
+streamlit>=1.40
+plotly>=5.24
+pandas
+pyarrow
+matplotlib   # src/iot/analysis.py (methodes de la partie 3 reutilisees par le dashboard)

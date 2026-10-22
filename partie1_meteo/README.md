@@ -8,13 +8,13 @@ Collecte, nettoyage et analyse de 5 ans de données météo horaires des station
 NOAA Global Hourly (bucket S3 public : noaa-global-hourly-pds)
       │  Python + requests + ThreadPoolExecutor (16 téléchargements en parallèle)
       ▼
-🥉 bronze/meteo/annee=AAAA/   données brutes, colonnes utiles, Parquet
+🥉 urbanhub/bronze/meteo/annee=AAAA/   données brutes, colonnes utiles, Parquet
       │  Spark (JupyterLab)
       ▼
-🥈 silver/meteo/annee=AAAA/   décodées, nettoyées, sans doublons, colonne ville
+🥈 urbanhub/silver/meteo/annee=AAAA/   décodées, nettoyées, sans doublons, colonne ville
       │  Spark
       ▼
-🥇 gold/meteo/                indicateurs : journalier, mensuel, anomalies, extrêmes
+🥇 urbanhub/gold/meteo/             indicateurs : journalier, mensuel, anomalies, extrêmes
       │  pandas + matplotlib
       ▼
 📊 Analyses et graphiques (4 questions métier)
@@ -26,27 +26,24 @@ Docker Compose · MinIO (data lake compatible S3) · Python (requests, pandas, T
 
 ## Lancer le projet
 
-1. Démarrer l'environnement :
+La partie 1 utilise le MinIO commun de l'équipe (`docker-compose.yml` à la racine du repo, bucket `urbanhub`).
+
+1. Démarrer l'environnement (depuis la racine du repo) :
 ```bash
-   docker compose up -d
+   docker compose --profile meteo up -d minio jupyter
 ```
-   - Console MinIO : http://localhost:9001 (minioadmin / minioadmin123)
-   - JupyterLab : http://localhost:8888
-2. Copier `meteo_batch.py` dans `scripts/` et `meteo_silver_gold.ipynb` dans `notebooks/`.
-3. Installer la bibliothèque MinIO dans le conteneur :
+   - Console MinIO : http://localhost:9101 (urbanhub / urbanhub123)
+   - JupyterLab : http://localhost:8888 (le dossier `partie1_meteo/` est monté dans `work/partie1_meteo/`)
+2. Collecter les données (couche Bronze) :
 ```bash
-   docker exec urbanhub-jupyter pip install minio
+   docker exec urbanhub_jupyter python -u /home/jovyan/work/partie1_meteo/meteo_batch.py test   # 3 stations
+   docker exec urbanhub_jupyter python -u /home/jovyan/work/partie1_meteo/meteo_batch.py        # toutes (≈ 20 min)
 ```
-4. Collecter les données (couche Bronze) :
-```bash
-   docker exec urbanhub-jupyter python -u /home/jovyan/work/scripts/meteo_batch.py test   # 3 stations
-   docker exec urbanhub-jupyter python -u /home/jovyan/work/scripts/meteo_batch.py        # toutes (≈ 20 min)
-```
-5. Ouvrir `meteo_silver_gold.ipynb` dans JupyterLab et exécuter les cellules dans l'ordre.
+3. Ouvrir `partie1_meteo/meteo_silver_gold.ipynb` dans JupyterLab et exécuter les cellules dans l'ordre.
 
 ## Données produites
 
-| Couche | Chemin MinIO | Contenu | Volume |
+| Couche | Chemin MinIO (bucket `urbanhub`) | Contenu | Volume |
 |---|---|---|---|
 | Bronze | `bronze/meteo/` | 211 stations, 2021 → août 2025, 10 colonnes brutes | 1 027 fichiers, 14 028 602 lignes |
 | Silver | `silver/meteo/` | Mesures horaires décodées et nettoyées | 11 076 139 lignes |
