@@ -101,6 +101,37 @@ fig.update_layout(height=230, showlegend=False, xaxis_title=None, yaxis_title=No
 fig.update_yaxes(autorange="reversed")
 theme.show(fig)
 
+# --------------------------------------------------------------------- carte des villes croisées
+from iot.config import CITIES  # noqa: E402  (coordonnees communes, config/cities.yaml)
+
+MAP_IND = {"temperature": ("Température", "°C"), "precipitation": ("Pluie", "mm/h"), "wind_speed": ("Vent", "m/s"),
+           **{p: (LABELS[p], "µg/m³") for p in POLS}, "bike_movements_per_hour": ("Activité vélo", "mvts/h")}
+ind = st.segmented_control("Carte des villes : indicateur moyen sur la période croisée", list(MAP_IND),
+                           default="no2" if "no2" in POLS else "temperature",
+                           format_func=lambda v: MAP_IND[v][0], key="p4_map_ind") or "temperature"
+per_city = h.groupby("city")[[ind]].mean().join(
+    pd.DataFrame(CITIES).rename(columns={"name": "city", "lat": "latitude", "lon": "longitude"}).set_index("city"),
+    how="inner").dropna().reset_index()
+lab, unit = MAP_IND[ind]
+c_map, c_txt = st.columns([3, 2])
+with c_map:
+    if per_city.empty:
+        st.info(f"Aucune valeur de {lab.lower()} sur la période croisée.")
+    else:
+        fig = px.scatter_map(per_city, lat="latitude", lon="longitude", color=ind, size=ind, size_max=40,
+                             text="city", color_continuous_scale=theme.SEQUENTIAL_MAP, map_style="carto-positron",
+                             zoom=4.6, center={"lat": 46.3, "lon": 2.6}, height=460,
+                             title=f"{lab} moyen(ne) par ville ({unit})")
+        fig.update_traces(textposition="top right", textfont=dict(color=theme.INK, size=13),
+                          hovertemplate=f"<b>%{{text}}</b><br>{lab} : %{{marker.color:.1f}} {unit}<extra></extra>")
+        fig.update_layout(margin=dict(l=0, r=0, t=40, b=0), coloraxis_colorbar=dict(title=unit))
+        theme.show(fig)
+with c_txt:
+    summary = h.groupby("city").agg(**{MAP_IND[c][0]: (c, "mean") for c in MAP_IND if c in h.columns})
+    st.dataframe(summary.reindex(cities).round(1), width="stretch")
+    st.caption("Moyennes horaires sur toute la période où chaque source est disponible. "
+               "L'activité vélo ne couvre que les heures de collecte CityBikes.")
+
 if bike_days < 7:
     st.warning(f"**Données vélo très courtes** : {len(bk)} heures exploitables sur {bike_days} jour(s) "
                f"({', '.join(sorted(bk['date_local'].unique()))}). Les questions 2 et 3 sont traitées de façon "

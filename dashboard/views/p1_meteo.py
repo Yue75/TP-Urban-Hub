@@ -56,6 +56,27 @@ st.caption(f"Les données NOAA publiées s'arrêtent au {j['date'].max():%d/%m/%
            f"jours avec au moins {MIN_MESURES} mesures horaires (sinon une journée peut être résumée par "
            "2 ou 3 relevés, ce qui produit des valeurs aberrantes).")
 
+# --------------------------------------------------------------------- carte des stations
+MAP_VARS = {"temp_moy": ("Température moyenne", "°C"), "vent_moy": ("Vent moyen", "m/s"),
+            "visibilite_moy": ("Visibilité moyenne", "m"), "pluie_mm": ("Pluie moyenne", "mm/jour")}
+var = st.segmented_control("Carte des stations NOAA", list(MAP_VARS), default="temp_moy",
+                           format_func=lambda v: MAP_VARS[v][0], key="p1_map_var") or "temp_moy"
+stations = (fiables.groupby("station_id")
+            .agg(station_name=("station_name", "first"), city=("city", "first"), latitude=("latitude", "mean"),
+                 longitude=("longitude", "mean"), value=(var, "mean"), jours=("date", "nunique"))
+            .dropna(subset=["latitude", "longitude", "value"]).reset_index())
+stations["city"] = stations["city"].fillna("hors des 5 villes")
+label, unit = MAP_VARS[var]
+scale = ([[0, theme.SERIES[0]], [0.5, "#f0efec"], [1, CHAUD]] if var == "temp_moy" else theme.SEQUENTIAL_MAP)
+fig = px.scatter_map(stations, lat="latitude", lon="longitude", color="value", size="jours", size_max=14,
+                     color_continuous_scale=scale, map_style="carto-positron", zoom=4.6,
+                     center={"lat": 46.6, "lon": 2.4}, height=560, custom_data=["station_name", "city", "jours"],
+                     title=f"{fr(len(stations))} stations françaises · {label.lower()} 2021-2025 (taille = jours fiables)")
+fig.update_traces(hovertemplate="<b>%{customdata[0]}</b> (%{customdata[1]})<br>"
+                                f"{label} : %{{marker.color:.1f}} {unit}<br>%{{customdata[2]}} jours<extra></extra>")
+fig.update_layout(margin=dict(l=0, r=0, t=40, b=0), coloraxis_colorbar=dict(title=unit))
+theme.show(fig)
+
 q1, q2, q3, q4 = st.tabs(["Q1 · Périodes anormales", "Q2 · Météo et visibilité", "Q3 · Saisons",
                           "Q4 · Jours extrêmes"])
 
@@ -312,3 +333,6 @@ with q4:
         share = lead.loc["Vent violent", "jours"] / max(tot["Vent violent"], 1)
         txt += f"- Le vent violent est une particularité marseillaise ({pct(share)} des jours, effet du mistral)."
     ui.reading(txt)
+
+ui.gallery("Figures du notebook Spark (partie1_meteo/meteo_silver_gold.ipynb)",
+           ui.notebook_pngs(lake.ROOT / "partie1_meteo" / "meteo_silver_gold.ipynb"))
