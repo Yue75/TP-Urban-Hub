@@ -1,5 +1,10 @@
-# UrbanHub : MinIO commun (bucket urbanhub) + Partie 1 météo (jupyter) + Partie 2 vélos (collector, spark)
-#   Python collecte -> MinIO stocke -> Spark transforme -> matplotlib montre
+# UrbanHub : un seul MinIO (bucket urbanhub) pour les 4 parties + dashboard
+#   Partie 1 météo    : jupyter        (profil meteo)   NOAA + Open-Meteo -> bronze/silver/gold meteo
+#   Partie 2 vélos    : collector      (toujours actif) CityBikes toutes les 2 min 30 -> bronze/citybikes
+#                       spark          (à la demande)   bronze -> silver -> gold + figures
+#   Partie 3 pollution: iot_collector  (profil iot)     OpenAQ -> bronze/openaq, silver/pollution
+#   Partie 4 croisée  : spark          (à la demande)   python -m croise.fusion -> gold/croise_*
+#   Dashboard         : dashboard      (toujours actif) http://localhost:8501
 x-urbanhub-env: &urbanhub-env
   MINIO_ENDPOINT: http://minio:9000
   MINIO_ACCESS_KEY: urbanhub
@@ -8,6 +13,7 @@ x-urbanhub-env: &urbanhub-env
   # Réseaux CityBikes des principales villes de France (id CityBikes)
   CITYBIKES_NETWORKS: velib,velov,le-velo,velo,bicloo,velhop,velomagg,v3-bordeaux,vlille,le-velo-star
   COLLECT_INTERVAL_SECONDS: "150"   # 2 min 30 s
+  IOT_STORE: s3                     # Parties 3 et 4 : lecture/écriture dans MinIO (et non data/)
 
 services:
   minio:
@@ -19,7 +25,7 @@ services:
       MINIO_ROOT_PASSWORD: urbanhub123
       MINIO_DEFAULT_BUCKETS: urbanhub
     ports:
-      - "9100:9000"   # API S3
+      - "9100:9000"   # API S3 (depuis l'hôte : http://localhost:9100)
       - "9101:9001"   # Console web : http://localhost:9101
     volumes:
       - minio_data:/bitnami/minio/data
@@ -30,6 +36,7 @@ services:
       retries: 20
     restart: unless-stopped
 
+  # Partie 2 : collecte CityBikes en continu
   collector:
     build:
       context: .
@@ -43,7 +50,8 @@ services:
         condition: service_healthy
     restart: unless-stopped
 
-  # Service "à la demande" : docker compose run --rm spark python -m spark_jobs.pipeline
+  # Service "à la demande" (Parties 2, 3, 4 et synchronisation data/) :
+  #   docker compose run --rm spark python -m spark_jobs.pipeline
   spark:
     image: urbanhub:latest
     container_name: urbanhub_spark
@@ -51,11 +59,25 @@ services:
     volumes:
       - ./outputs:/app/outputs
       - ./src:/app/src
+      - ./data:/app/data
     depends_on:
       minio:
         condition: service_healthy
     profiles: ["batch"]
 
+  # Partie 3 : ingestion OpenAQ régulière (flux IoT). Nécessite OPENAQ_API_KEY dans .env
+  #   docker compose --profile iot up -d iot_collector
+  iot_collector:
+    image: urbanhub:latest
+    container_name: urbanhub_iot
+    command: python -m iot.run
+    environment: *urbanhub-env
+    env_file:
+      - path: .env
+        required: false
+    volumes:
+      - ./src:/app/src
+      - ./outputs:/app/outputs
   iot_collector:
     build:
       context: .
@@ -73,6 +95,8 @@ services:
       minio:
         condition: service_healthy
     restart: unless-stopped
+    profiles: ["iot"]
+
 
   iot_analysis:
     image: urbanhub:latest
@@ -100,10 +124,32 @@ services:
       - "4040:4040"   # Interface Spark
     volumes:
       - ./partie1_meteo:/home/jovyan/work/partie1_meteo
+      - ./data:/home/jovyan/work/data
     depends_on:
       minio:
         condition: service_healthy
     profiles: ["meteo"]
+
+  # Dashboard Streamlit (4 parties) : lit data/, alimenté par `python -m common.lake_sync pull`
+  dashboard:
+    image: urbanhub:latest
+    container_name: urbanhub_dashboard
+    command: streamlit run dashboard/app.py --server.port 8501 --server.address 0.0.0.0 --server.headless true
+    environment: *urbanhub-env
+    ports:
+      - "8501:8501"   # http://localhost:8501
+    volumes:
+      - ./dashboard:/app/dashboard
+      - ./src:/app/src
+      - ./data:/app/data
+      - ./outputs:/app/outputs
+      - ./config:/app/config
+      - ./.streamlit:/app/.streamlit
+      - ./partie1_meteo:/app/partie1_meteo:ro   # figures du notebook (page Partie 1)
+    depends_on:
+      minio:
+        condition: service_healthy
+    restart: unless-stopped
 
 volumes:
   minio_data:

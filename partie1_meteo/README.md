@@ -39,7 +39,6 @@ NOAA Global Hourly (S3 public : noaa-global-hourly-pds)        Open-Meteo (API)
 
 | Fichier | Rôle |
 |---|---|
-| `docker-compose.yml` | MinIO + JupyterLab/PySpark (identifiants de l'équipe) |
 | `meteo_batch.py` | Collecte NOAA en parallèle → Bronze |
 | `meteo_silver_gold.ipynb` | Nettoyage (Silver), indicateurs (Gold), analyses et graphiques |
 | `meteo_recente.py` | Météo récente Open-Meteo → Bronze, Silver et Gold (Partie 4) |
@@ -48,24 +47,34 @@ NOAA Global Hourly (S3 public : noaa-global-hourly-pds)        Open-Meteo (API)
 
 ## Lancer le projet
 
-1. Démarrer l'environnement :
+Tout passe par le `docker-compose.yml` **à la racine du repo** (MinIO commun, bucket `urbanhub`).
+
+1. Démarrer MinIO et JupyterLab :
 ```bash
-docker compose up -d
+docker compose up -d minio
+docker compose --profile meteo up -d jupyter
 ```
-   - Console MinIO : http://localhost:9001 (urbanhub / urbanhub123)
-   - JupyterLab : http://localhost:8888
-2. Copier les `.py` dans `scripts/` et le notebook dans `notebooks/` (les scripts installent `minio` tout seuls si besoin).
-3. Collecter NOAA (Bronze) :
+   - Console MinIO : http://localhost:9101 (urbanhub / urbanhub123)
+   - JupyterLab : http://localhost:8888 (dossier `partie1_meteo/`)
+2. Collecter NOAA (Bronze) :
 ```bash
-docker exec urbanhub-jupyter python -u /home/jovyan/work/scripts/meteo_batch.py test   # 3 stations
-docker exec urbanhub-jupyter python -u /home/jovyan/work/scripts/meteo_batch.py        # toutes (≈ 20 min)
+docker exec urbanhub_jupyter python -u /home/jovyan/work/partie1_meteo/meteo_batch.py test   # 3 stations
+docker exec urbanhub_jupyter python -u /home/jovyan/work/partie1_meteo/meteo_batch.py        # toutes (≈ 20 min)
 ```
-4. Ouvrir `meteo_silver_gold.ipynb` et exécuter toutes les cellules (≈ 10 min).
-5. Météo récente pour la Partie 4 (à relancer avant la démo pour avoir les derniers jours) :
+3. Ouvrir `partie1_meteo/meteo_silver_gold.ipynb` dans JupyterLab et exécuter toutes les cellules (≈ 10 min).
+4. Météo récente pour la Partie 4 (à relancer avant la démo pour avoir les derniers jours) :
 ```bash
-docker exec urbanhub-jupyter python /home/jovyan/work/scripts/meteo_recente.py
+docker exec urbanhub_jupyter python /home/jovyan/work/partie1_meteo/meteo_recente.py
 ```
-6. Export CSV pour l'équipe : `docker exec urbanhub-jupyter python /home/jovyan/work/scripts/export_gold_meteo.py` → `data/export_gold_meteo.zip`
+5. Récupérer les tables Gold dans `data/` pour le dashboard (depuis la racine du repo) :
+```bash
+docker compose run --rm spark python -m common.lake_sync pull
+```
+   `export_gold_meteo.py` produit toujours le zip `data/export_gold_meteo.zip` pour un envoi hors MinIO.
+
+> Source : l'URL de l'énoncé (`ncei.noaa.gov/data/global-hourly/access/`) redirige aujourd'hui vers le
+> bucket S3 public `noaa-global-hourly-pds`, utilisé directement. Il ne contient pas encore 2026 :
+> les « 5 dernières années » disponibles sont 2021 → août 2025.
 
 ## Données produites
 

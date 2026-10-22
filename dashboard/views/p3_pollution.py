@@ -304,3 +304,6 @@ with q4:
            "guide : il signale un événement local (trafic, conditions météo défavorables à la dispersion…) "
            "à croiser avec la météo (Partie 4).")
     ui.reading(txt)
+
+ui.gallery("Figures du rapport (outputs/partie3/figures, générées par iot.analysis)",
+           ui.png_files(lake.ROOT / "outputs" / "partie3" / "figures"))

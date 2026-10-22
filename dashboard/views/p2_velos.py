@@ -385,3 +385,5 @@ with q5:
     txt += (f"- Sur l'ensemble des réseaux, {pct(vide_share)} des stations critiques sont des stations **vides** : "
             "le besoin principal est d'apporter des vélos plutôt que d'en retirer.")
     ui.reading(txt)
+
+ui.gallery("Figures du rapport (outputs/figures, générées par viz.figures)", ui.png_files(lake.ROOT / "outputs" / "figures"))

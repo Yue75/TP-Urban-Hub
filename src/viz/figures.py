@@ -318,6 +318,13 @@ def main() -> None:
     g = load_gold(spark)
     spark.stop()
 
+    # Réseaux sans activité mesurable (aucun mouvement, stations vides à chaque relevé, ex. le-velo
+    # à Marseille) : exclus des analyses, comme dans le dashboard et la Partie 4
+    per_net = g["network_timeseries"].groupby("network_id").agg(
+        mv=("movements", "sum"), empty=("share_stations_empty", "mean"))
+    inactive = per_net[(per_net["mv"] == 0) & (per_net["empty"] >= 0.99)].index.tolist()
+    g = {n: df[~df["network_id"].isin(inactive)] for n, df in g.items()}
+
     ts = g["network_timeseries"]
     saved, notes = [], [
         "# UrbanHub – Partie 2 : mobilité vélo en libre-service (CityBikes)\n",
@@ -327,6 +334,9 @@ def main() -> None:
         "> Indicateurs calculés à partir des variations du nombre de vélos entre snapshots consécutifs "
         "(≈ toutes les 2 min 30) : ce sont des estimations basses de l'activité réelle.\n",
     ]
+    if inactive:
+        notes.append(f"> Réseaux exclus (0 vélo et aucun mouvement à chaque relevé, flux CityBikes inexploitable) : "
+                     f"{', '.join(f'`{n}`' for n in inactive)}.\n")
     for question in (q1, q2, q3, q4, q5):
         question(g, saved, notes)
 
