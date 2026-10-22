@@ -1,0 +1,31 @@
+services:
+  minio:
+    image: cgr.dev/chainguard/minio:latest
+    container_name: urbanhub-minio
+    user: "0:0"
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin123
+    ports:
+      - "9000:9000" # API S3
+      - "9001:9001" # Console web
+    volumes:
+      - minio_data:/data
+
+  jupyter:
+    image: quay.io/jupyter/pyspark-notebook:2024-05-27
+    container_name: urbanhub-jupyter
+    command: start-notebook.py --IdentityProvider.token=''
+    ports:
+      - "8888:8888" # JupyterLab
+      - "4040:4040" # Interface Spark
+    volumes:
+      - ./notebooks:/home/jovyan/work/notebooks
+      - ./scripts:/home/jovyan/work/scripts
+      - ./data:/home/jovyan/work/data
+    depends_on:
+      - minio
+
+volumes:
+  minio_data:
