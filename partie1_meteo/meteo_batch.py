@@ -2,7 +2,7 @@
 UrbanHub - Partie 1 : flux Batch (meteo NOAA)
 Telecharge EN PARALLELE les fichiers des stations francaises sur 5 ans
 depuis le bucket S3 public de la NOAA, garde les colonnes utiles
-et les depose dans la couche Bronze de MinIO.
+et les depose dans la couche Bronze de MinIO (s3://urbanhub/bronze/meteo/).
 Usage :  python meteo_batch.py        (toutes les stations)
          python meteo_batch.py test   (3 stations, pour tester)
 """
@@ -25,8 +25,13 @@ DOSSIER = "/home/jovyan/work/data/bronze/meteo"
 NB_TELECHARGEMENTS_PARALLELES = 16
 ENTETES = {"User-Agent": "UrbanHub-TP-etudiant/1.0 (projet pedagogique)"}
 
-client = Minio("minio:9000", access_key="minioadmin",
-               secret_key="minioadmin123", secure=False)
+# MinIO commun de l'equipe (docker-compose.yml a la racine), bucket unique "urbanhub"
+MINIO_ENDPOINT = os.getenv("MINIO_ENDPOINT", "http://minio:9000")
+BUCKET = os.getenv("MINIO_BUCKET", "urbanhub")
+client = Minio(re.sub(r"^https?://", "", MINIO_ENDPOINT),
+               access_key=os.getenv("MINIO_ACCESS_KEY", "urbanhub"),
+               secret_key=os.getenv("MINIO_SECRET_KEY", "urbanhub123"),
+               secure=MINIO_ENDPOINT.startswith("https"))
 
 
 def get(url, timeout=180):
@@ -44,10 +49,9 @@ def get(url, timeout=180):
             time.sleep(10)
 
 
-def creer_buckets():
-    for bucket in ["bronze", "silver", "gold"]:
-        if not client.bucket_exists(bucket):
-            client.make_bucket(bucket)
+def creer_bucket():
+    if not client.bucket_exists(BUCKET):
+        client.make_bucket(BUCKET)
 
 
 def stations_par_code_07(annee):
@@ -81,7 +85,7 @@ def stations_france():
     os.makedirs(DOSSIER, exist_ok=True)
     chemin = f"{DOSSIER}/stations_france.csv"
     df.to_csv(chemin, index=False)
-    client.fput_object("bronze", "meteo/stations_france.csv", chemin)
+    client.fput_object(BUCKET, "bronze/meteo/stations_france.csv", chemin)
     return df
 
 
@@ -103,14 +107,14 @@ def telecharger(station_id, annee):
     os.makedirs(dossier, exist_ok=True)
     chemin = f"{dossier}/{station_id}.parquet"
     df.to_parquet(chemin, index=False)
-    client.fput_object("bronze", f"meteo/annee={annee}/{station_id}.parquet", chemin)
+    client.fput_object(BUCKET, f"bronze/meteo/annee={annee}/{station_id}.parquet", chemin)
     os.remove(chemin)                                # copie locale inutile
     return station_id, annee, len(df)
 
 
 def main():
     debut = time.time()
-    creer_buckets()
+    creer_bucket()
     stations = stations_france()
     if len(sys.argv) > 1 and sys.argv[1] == "test":
         stations = stations.head(3)
