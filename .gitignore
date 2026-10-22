@@ -1,4 +1,13 @@
-outputs/data/
+# Secrets
+.env
+*.env
+!.env.example
+
+# Donnees (regenerees par les scripts)
+data/
+
+# Python
 __pycache__/
 *.pyc
-docker/certs/*.crt
+.venv/
+.ipynb_checkpoints/
