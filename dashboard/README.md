@@ -26,6 +26,12 @@ Chaque table est cherchée **par son nom**, quel que soit le format reçu :
 La liste des tables attendues par partie est dans [lake.py](lake.py) (`TABLES`) ; l'accueil du dashboard
 indique celles qui sont présentes. Une page dont les données manquent l'affiche au lieu de planter.
 
+Une table absente de `data/` est ensuite cherchée dans `outputs/` (résultats commités par l'équipe) : c'est
+le cas du classement des stations de pollution (`outputs/partie3/tables/q1_ranking_stations.csv`).
+
+La page Pollution réutilise directement les méthodes de la partie 3 (`src/iot/analysis.py` : profil journalier,
+comparaison aux valeurs guides OMS, détection des épisodes) pour que les résultats soient identiques.
+
 ## Organisation
 
 | Fichier | Rôle |

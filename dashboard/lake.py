@@ -7,6 +7,7 @@ le format envoye par l'equipe :
     data/gold/station_usage/                      dossier Parquet ecrit par Spark (partitions cle=valeur)
     data/silver/pollution_sensors/sensors.parquet fichier Parquet seul
 Un nom peut etre qualifie ("silver/meteo") pour lever une ambiguite.
+Si la table n'est pas dans data/, elle est cherchee dans outputs/ (resultats commites par l'equipe).
 """
 from __future__ import annotations
 
@@ -21,6 +22,7 @@ import streamlit as st
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = Path(os.getenv("URBANHUB_DATA_DIR", ROOT / "data"))
+SEARCH_DIRS = [DATA_DIR, ROOT / "outputs"]           # par ordre de priorite
 
 _PARTITION = re.compile(r"^[^=]+=[^=]*$")          # dossier de partition Spark : annee=2021
 _DATE_COLS = {"date", "timestamp", "collected_at", "last_seen", "debut", "fin"}
@@ -51,7 +53,8 @@ TABLES: dict[str, list[Table]] = {
     ],
     "Partie 3 – Pollution": [
         Table("pollution_horaire_ville", "Concentration horaire par ville et polluant"),
-        Table("silver/pollution", "Mesures nettoyées par capteur (classement des zones)"),
+        Table("pollution_sensors", "Référentiel des capteurs (position, polluant)"),
+        Table("q1_ranking_stations", "Classement des stations (résultat de la partie 3, outputs/)"),
     ],
 }
 
@@ -65,11 +68,11 @@ def _is_table_dir(d: Path) -> bool:
     return any(d.rglob("*.parquet"))
 
 
-def _candidates() -> list[Path]:
-    if not DATA_DIR.exists():
+def _candidates(base: Path) -> list[Path]:
+    if not base.exists():
         return []
     out = []
-    for p in DATA_DIR.rglob("*"):
+    for p in base.rglob("*"):
         if p.name.startswith((".", "_")):
             continue
         if p.is_file() and p.suffix.lower() in (".csv", ".parquet"):
@@ -82,15 +85,20 @@ def _candidates() -> list[Path]:
 def find(name: str) -> Path | None:
     """Chemin de la table `name` (le plus court si plusieurs correspondent)."""
     name = name.strip("/")
-    matches = []
-    for p in _candidates():
-        rel = p.relative_to(DATA_DIR).with_suffix("").as_posix() if p.is_file() \
-            else p.relative_to(DATA_DIR).as_posix()
-        if rel == name or rel.endswith("/" + name):
-            matches.append(p)
-    if not matches:
-        return None
-    return min(matches, key=lambda p: (len(p.relative_to(DATA_DIR).parts), str(p)))
+    for base in SEARCH_DIRS:
+        matches = []
+        for p in _candidates(base):
+            rel = p.relative_to(base).with_suffix("").as_posix() if p.is_file() \
+                else p.relative_to(base).as_posix()
+            if rel == name or rel.endswith("/" + name):
+                matches.append(p)
+        if matches:
+            return min(matches, key=lambda p: (len(p.relative_to(base).parts), str(p)))
+    return None
+
+
+def display_path(p: Path) -> str:
+    return p.relative_to(ROOT).as_posix() if p.is_relative_to(ROOT) else str(p)
 
 
 def _mtime(p: Path) -> float:
@@ -102,7 +110,7 @@ def _mtime(p: Path) -> float:
 # ------------------------------------------------------------------ lecture
 def _parse_dates(df: pd.DataFrame) -> pd.DataFrame:
     for col in df.columns:
-        if (col in _DATE_COLS or col.endswith("_at")) and pd.api.types.is_string_dtype(df[col]):
+        if (col in _DATE_COLS or col.endswith("_at") or col.startswith("datetime")) and pd.api.types.is_string_dtype(df[col]):
             parsed = pd.to_datetime(df[col], errors="coerce")
             if parsed.notna().sum() >= 0.9 * df[col].notna().sum():
                 df[col] = parsed
@@ -147,7 +155,7 @@ def status(partie: str) -> pd.DataFrame:
         else:
             rows.append({"Table": t.name, "Contenu": t.description, "État": "✓ Disponible",
                          "Lignes": _count_rows(str(p), _mtime(p)),
-                         "Fichier": p.relative_to(DATA_DIR).as_posix()})
+                         "Fichier": display_path(p)})
     out = pd.DataFrame(rows)
     out["Lignes"] = out["Lignes"].astype("Int64")
     return out
