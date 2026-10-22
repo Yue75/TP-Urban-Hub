@@ -2,7 +2,7 @@
 UrbanHub - Partie 1 : flux Batch (meteo NOAA)
 Telecharge EN PARALLELE les fichiers des stations francaises sur 5 ans
 depuis le bucket S3 public de la NOAA, garde les colonnes utiles
-et les depose dans la couche Bronze de MinIO (s3://urbanhub/bronze/meteo/).
+et les depose dans la couche Bronze de MinIO.
 Usage :  python meteo_batch.py        (toutes les stations)
          python meteo_batch.py test   (3 stations, pour tester)
 """
@@ -14,7 +14,12 @@ import time
 import requests
 import pandas as pd
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from minio import Minio
+try:
+    from minio import Minio
+except ImportError:                      # conteneur recree : on reinstalle la librairie
+    import subprocess, sys
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "minio"], check=True)
+    from minio import Minio
 
 ANNEES = range(2021, 2026)          # 5 dernieres annees completes
 BASE_URL = "https://noaa-global-hourly-pds.s3.amazonaws.com"
@@ -25,10 +30,10 @@ DOSSIER = "/home/jovyan/work/data/bronze/meteo"
 NB_TELECHARGEMENTS_PARALLELES = 16
 ENTETES = {"User-Agent": "UrbanHub-TP-etudiant/1.0 (projet pedagogique)"}
 
-# MinIO commun de l'equipe (docker-compose.yml a la racine), bucket unique "urbanhub"
+# MinIO commun de l'equipe : memes variables que le reste du projet (voir .env)
 MINIO_ENDPOINT = os.getenv("MINIO_ENDPOINT", "http://minio:9000")
 BUCKET = os.getenv("MINIO_BUCKET", "urbanhub")
-client = Minio(re.sub(r"^https?://", "", MINIO_ENDPOINT),
+client = Minio(MINIO_ENDPOINT.replace("http://", "").replace("https://", ""),
                access_key=os.getenv("MINIO_ACCESS_KEY", "urbanhub"),
                secret_key=os.getenv("MINIO_SECRET_KEY", "urbanhub123"),
                secure=MINIO_ENDPOINT.startswith("https"))
@@ -49,7 +54,8 @@ def get(url, timeout=180):
             time.sleep(10)
 
 
-def creer_bucket():
+def creer_buckets():
+    # un seul bucket pour toute l'equipe : bronze/, silver/, gold/ sont des prefixes
     if not client.bucket_exists(BUCKET):
         client.make_bucket(BUCKET)
 
@@ -114,7 +120,7 @@ def telecharger(station_id, annee):
 
 def main():
     debut = time.time()
-    creer_bucket()
+    creer_buckets()
     stations = stations_france()
     if len(sys.argv) > 1 and sys.argv[1] == "test":
         stations = stations.head(3)
